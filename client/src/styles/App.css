@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/src/styles/fonts/NotoSansJP-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.home-page {
+  position: block;
+  overflow-x: hidden;
+}
+
+.login-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.peer-bear {
+  width: 40vh;
+  margin-left: auto;
+}
+
+.welcomeText {
+  position: absolute;
+  top: 35vh;
+  left: 25vw;
+  padding: 0;
+  margin: auto;
+  width: 54vw;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #502a13; /* The typwriter cursor */
+  letter-spacing: 0.3em; /* Adjust as needed */
+  white-space: nowrap;
+  font-family: "Noto Sans";
+  color: #502a13;
+  font-size: 3.2vw;
+  animation: typing 3s steps(55, end), blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 54vw;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #502a13;
+  }
+}
+
+.Login-button {
+  width: 14vw;
+  height: 8vh;
+  border-radius: 15px;
+  background-color: #ffe8c7;
+  font-size: 3.5vh;
+  font-weight: bold;
+  color: #bb7817;
+  cursor: pointer;
+  border-color: #ffe8c7;
+  border-radius: none;
+  margin-left: 43vw;
+  margin-bottom: 3vh;
+}
+
+.SignOut {
+  width: 12vw;
+  height: 6.8vh;
+  border-radius: 15px;
+  background-color: #502a13;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #ffe8c7;
+  cursor: pointer;
+  border-color: #502a13;
+}
