@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Digital Numbers";
+  src: url("/src/assets/fonts/DigitalNumbers-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 .home-page {
   position: block;
   overflow-x: hidden;
@@ -84,4 +91,72 @@
   color: #ffe8c7;
   cursor: pointer;
   border-color: #502a13;
+}
+
+.home-button {
+  font-family: "Digital Numbers";
+  margin-top: 5px;
+  height: 10vh;
+  width: 40vh;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  justify-self: center;
+}
+.portfolio-button {
+  font-family: "Digital Numbers";
+  margin-left: 650px;
+  margin-top: 5px;
+  margin-right: 5px;
+  height: 10vh;
+
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  /* justify-self: right; */
+}
+
+.email-button {
+  margin-left: 5px;
+  margin-top: 5px;
+  height: 10vh;
+  margin-right: 5px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.linkedin-button {
+  margin-top: 5px;
+  margin-right: 5px;
+  height: 10vh;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.resume-button {
+  margin-top: 5px;
+  /* margin-right: 5px; */
+  height: 10vh;
+  /* width: 5vh; */
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  /* justify-self: center; */
+}
+
+.linkedin-image,
+.resume-image,
+.email-image {
+  height: 50%;
 }

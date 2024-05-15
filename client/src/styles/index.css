@@ -25,10 +25,9 @@ code {
 }
 
 header {
-  background-color: #502a13;
-  height: 15vh;
+  background-color: #ffffff;
+  height: 50px;
   width: auto;
-  padding: 20px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;

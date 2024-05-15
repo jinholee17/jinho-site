@@ -11,7 +11,11 @@ export default function Home() {
 
   return (
     <div>
-      <h1 aria-label="Home Title">Home</h1>
+      <h1 aria-label="Home Text" className="home-text">
+        Hi! I’m Jinho! I’m a developer studying computer science at Brown
+        University. I’m passionate in the intersection of software and human
+        interaction, as well as storytelling. Welcome to my website!
+      </h1>
     </div>
   );
 }
