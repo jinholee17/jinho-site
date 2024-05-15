@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Recursive Casual Regular";
+  src: url("/src/styles/fonts/Recursive_Casual-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d2b181;
+}
+
+main {
+  margin-top: 60px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  background-color: #502a13;
+  height: 15vh;
+  width: auto;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#bearLogo {
+  width: auto;
+  max-width: 13vh;
+  max-height: 13vh;
+}
+
+.title {
+  font-family: "Recursive Casual Regular";
+  color: #ffe8c7;
+  size: 32px;
+  margin-left: 15px;
+}
