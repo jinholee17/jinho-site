@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("\src\assets\fonts\OpenSans_Condensed-Light.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.home-page {
+  position: block;
+  overflow-x: hidden;
+}
