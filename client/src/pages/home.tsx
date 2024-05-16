@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Portfolio from "./portfolio";
+import Popup from "reactjs-popup";
 
 enum Section {
   HOME = "HOME",
@@ -50,6 +51,31 @@ export default function Home() {
           <div className="text-overlay">
             <p className="square-text" id="square-text">
               face reveal
+            </p>
+          </div>
+        </div>
+      </button>
+      {/* <Popup
+        trigger={<button> Click to open popup </button>}
+        position="right center"
+      >
+        <div>GeeksforGeeks</div>
+        <button>Click here</button>
+      </Popup> */}
+      <button
+        className="diamond-button"
+        aria-label="diamond button"
+        // onClick={() => }
+      >
+        <div className="image-container">
+          <img
+            className="diamond-image"
+            src="/src/assets/images/diamond.png"
+            id="diamond-image"
+          />
+          <div className="text-overlay">
+            <p className="diamond-text" id="diamond-text">
+              about me
             </p>
           </div>
         </div>
