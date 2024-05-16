@@ -12,11 +12,6 @@
   font-style: normal;
 }
 
-.home-page {
-  position: block;
-  overflow-x: hidden;
-}
-
 .login-box {
   display: flex;
   align-items: center;
