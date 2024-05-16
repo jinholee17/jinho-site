@@ -8,7 +8,7 @@ enum Section {
 
 export default function Portfolio() {
   return (
-    <div className="lighter-purple-bg">
+    <div className="lighter-purple-bg" id="lighter-purple-bg">
       <h1 aria-label="Portfolio Header" className="portfolio-text">
         My featured works!
       </h1>

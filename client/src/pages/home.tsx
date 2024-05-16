@@ -33,6 +33,17 @@ export default function Home(props: pageProps) {
     }
   }
 
+  function scrollToPortfolio() {
+    const scrollButton = document.getElementById("scrollButton");
+    const targetDiv = document.getElementById("lighter-purple-bg");
+
+    if (targetDiv != null) {
+      targetDiv.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.error("Could not find scroll button or target div");
+    }
+  }
+
   return (
     <div className="purple-bg">
       <h1 aria-label="Introduction Text" className="hello-text">
@@ -80,7 +91,7 @@ export default function Home(props: pageProps) {
       <button
         className="square-button"
         aria-label="square button"
-        onClick={() => changeImage()}
+        onClick={() => scrollToPortfolio()}
       >
         <div className="image-container">
           <img
