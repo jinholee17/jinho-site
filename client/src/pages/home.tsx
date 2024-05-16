@@ -1,13 +1,17 @@
 import { useState } from "react";
-import Portfolio from "./portfolio";
 import Popup from "reactjs-popup";
+import Portfolio from "./portfolio";
 
 enum Section {
   HOME = "HOME",
-  PORTFOLIO = "PORTFOLIO",
+  ABOUTME = "ABOUTME",
 }
 
-export default function Home() {
+interface pageProps {
+  setSection: React.Dispatch<React.SetStateAction<Section>>;
+}
+
+export default function Home(props: pageProps) {
   const imagePath1 = "/src/assets/images/square.png";
   const imagePath2 = "/src/assets/images/face-reveal.png";
 
@@ -30,7 +34,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className="purple-bg">
       <h1 aria-label="Introduction Text" className="hello-text">
         Hi! I’m <span className="bold-sans">Jinho</span>! I’m a full-stack
         developer studying computer science and literary arts at Brown
@@ -55,17 +59,10 @@ export default function Home() {
           </div>
         </div>
       </button>
-      {/* <Popup
-        trigger={<button> Click to open popup </button>}
-        position="right center"
-      >
-        <div>GeeksforGeeks</div>
-        <button>Click here</button>
-      </Popup> */}
       <button
         className="diamond-button"
         aria-label="diamond button"
-        // onClick={() => }
+        onClick={() => props.setSection(Section.ABOUTME)}
       >
         <div className="image-container">
           <img
@@ -80,6 +77,25 @@ export default function Home() {
           </div>
         </div>
       </button>
+      <button
+        className="square-button"
+        aria-label="square button"
+        onClick={() => changeImage()}
+      >
+        <div className="image-container">
+          <img
+            className="square-image"
+            src="/src/assets/images/square.png"
+            id="square-image"
+          />
+          <div className="text-overlay">
+            <p className="square-text" id="square-text">
+              portfolio
+            </p>
+          </div>
+        </div>
+      </button>
+      <Portfolio></Portfolio>
     </div>
   );
 }

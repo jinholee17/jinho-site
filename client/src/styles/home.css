@@ -4,6 +4,12 @@
   /* font-style: light; */
 }
 
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("/src/assets/fonts/OpenSans-Regular.ttf") format("truetype");
+  /* font-style: light; */
+}
+
 .bold-sans {
   font-weight: bold;
 }
@@ -14,22 +20,25 @@
   font-weight: 50;
   padding-left: 80px;
   padding-right: 80px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   /* overflow: hidden;
   border-right: 0.15em solid #000000;
   animation: typing 3s steps(55, end), blink-caret 1s step-end infinite; */
 }
 
-.home-text {
+/* .home-text {
   font-family: "Open Sans";
   font-size: 30px;
   font-weight: 50;
   padding-left: 80px;
   padding-right: 80px;
-}
+} */
 
 .home-page {
   position: block;
   overflow-x: hidden;
+  margin-top: 100px;
 }
 
 .square-button,
@@ -93,4 +102,8 @@
   50% {
     border-color: #502a13;
   }
+}
+
+.purple-bg {
+  background-color: #bca7d7;
 }

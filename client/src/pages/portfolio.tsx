@@ -1,17 +1,101 @@
 import { useState } from "react";
-import Home from "./home";
+import Popup from "reactjs-popup";
 
 enum Section {
   HOME = "HOME",
-  PORTFOLIO = "PORTFOLIO",
+  ABOUTME = "ABOUTME",
 }
 
 export default function Portfolio() {
-  const [section, setSection] = useState<Section>(Section.HOME);
-
   return (
-    <div>
-      <h1 aria-label="portfolio page">portfolio</h1>
+    <div className="lighter-purple-bg">
+      <h1 aria-label="Portfolio Header" className="portfolio-text">
+        My featured works!
+      </h1>
+      <div className="project">
+        <button
+          className="square-button"
+          aria-label="square button"
+          // onClick={() => }
+        >
+          <div className="image-container">
+            <img
+              className="square-image"
+              src="/src/assets/images/square.png"
+              id="square-image"
+            />
+            <div className="text-overlay">
+              <p className="square-text" id="square-text">
+                lock in at brown
+              </p>
+            </div>
+          </div>
+        </button>
+        <div className="project-text">
+          <p>In a team of 4, we programmed a study spot generator.</p>
+        </div>
+      </div>
+      <div className="project">
+        <button
+          className="square-button"
+          aria-label="square button"
+          // onClick={() => }
+        >
+          <div className="image-container">
+            <img
+              className="square-image"
+              src="/src/assets/images/square.png"
+              id="square-image"
+            />
+            <div className="text-overlay">
+              <p className="square-text" id="square-text">
+                IgniteCS
+              </p>
+            </div>
+          </div>
+        </button>
+        <div className="project-text">
+          <p>In a team of 4, we programmed a study spot generator.</p>
+        </div>
+      </div>
+      <div className="project">
+        <button
+          className="square-button"
+          aria-label="square button"
+          // onClick={() => }
+        >
+          <div className="image-container">
+            <img
+              className="square-image"
+              src="/src/assets/images/square.png"
+              id="square-image"
+            />
+            <div className="text-overlay">
+              <p className="square-text" id="square-text">
+                Cosmic Connection
+              </p>
+            </div>
+          </div>
+        </button>
+        <div className="project-text">
+          <p className="cosmic-text">
+            <span className="bold-sans">Hack @ Brown 2024 Entry: </span>A star
+            sign compatibility generator! Emails a match an AI generated
+            love-letter.
+          </p>
+          <iframe
+            className="cosmic-video"
+            width="320"
+            height="180"
+            src="https://www.youtube.com/embed/MxdVOOskPsU"
+            title="Cosmic Connection"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 }
