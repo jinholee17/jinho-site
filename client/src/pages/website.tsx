@@ -64,7 +64,6 @@ export default function Website() {
       </header>
       {section === Section.HOME ? <Home /> : null}
       {section === Section.PORTFOLIO ? <Portfolio /> : null}
-      <h1 aria-label="Gearup Title">Home</h1>
     </div>
   );
 }

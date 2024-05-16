@@ -32,6 +32,41 @@
   overflow-x: hidden;
 }
 
+.square-button {
+  background-color: transparent;
+  border: 0;
+  font-family: "Digital Numbers";
+  margin-left: 100px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black; /* Text color */
+}
+
+.square-text {
+  font-size: 20px;
+}
+
+.square-image {
+  height: 150px;
+  position: relative;
+}
+
+.square-button:hover .square-image {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
 /* The typing effect */
 @keyframes typing {
   from {
