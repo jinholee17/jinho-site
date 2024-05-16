@@ -63,7 +63,7 @@ export default function Website() {
         </button>
       </header>
       {section === Section.HOME ? <Home setSection={setSection} /> : null}
-      {section === Section.ABOUTME ? <AboutMe /> : null}
+      {section === Section.ABOUTME ? <AboutMe setSection={setSection} /> : null}
       <header>
         <p className="thanks-text">thanks for stopping by!</p>
         <button
