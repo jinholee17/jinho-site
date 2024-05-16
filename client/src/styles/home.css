@@ -32,7 +32,8 @@
   overflow-x: hidden;
 }
 
-.square-button {
+.square-button,
+.diamond-button {
   background-color: transparent;
   border: 0;
   font-family: "Digital Numbers";
@@ -54,16 +55,22 @@
   color: black; /* Text color */
 }
 
-.square-text {
+.square-text,
+.diamond-text {
   font-size: 20px;
 }
 
-.square-image {
+.square-image,
+.diamond-image {
   height: 150px;
   position: relative;
 }
 
 .square-button:hover .square-image {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.diamond-button:hover .diamond-image {
   opacity: 0.8; /* Reduce opacity on hover */
 }
 
