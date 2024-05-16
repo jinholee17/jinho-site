@@ -4,6 +4,57 @@
 }
 
 .aboutme-header {
-  background-color: #e5f4f9;
   font-family: "Digital Numbers";
+  margin-bottom: 0px;
+  /* margin-top: auto; */
+}
+
+.aboutme-title {
+  font-family: "Digital Numbers";
+  font-size: 20px;
+  padding-top: 25px;
+  margin-top: 0px;
+}
+
+.aboutme-text {
+  font-family: "Open Sans Regular";
+  border-radius: 30px;
+  background-color: white;
+  padding-bottom: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+.back-home-button {
+  font-family: "Digital Numbers";
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 100px;
+
+  height: 10vh;
+  width: 40vh;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  justify-self: center;
+}
+
+.gates-image {
+  margin-left: 50px;
+  margin-bottom: 100px;
+  border-radius: 40px;
+
+  height: 300px;
+}
+
+.colorado-image {
+  margin-left: 50px;
+  margin-top: 100px;
+  border-radius: 40px;
+
+  height: 500px;
 }
