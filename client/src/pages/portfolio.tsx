@@ -21,7 +21,7 @@ export default function Portfolio() {
           <div className="image-container">
             <img
               className="square-image"
-              src="/src/assets/images/square.png"
+              src="/src/assets/images/gray-square.png"
               id="square-image"
             />
             <div className="text-overlay">
@@ -31,9 +31,23 @@ export default function Portfolio() {
             </div>
           </div>
         </button>
-        <div className="project-text">
-          <p>In a team of 4, we programmed a study spot generator.</p>
-        </div>
+        <button
+          className="project-button"
+          aria-label="lock in at brown button"
+          onClick={() =>
+            window.open(
+              "https://devpost.com/software/cosmic-connection",
+              "_blank"
+            )
+          }
+        >
+          <div className="image-container">
+            <img
+              className="project-image"
+              src="/src/assets/images/lockedin.png"
+            />
+          </div>
+        </button>
       </div>
       <div className="project">
         <button
@@ -44,7 +58,7 @@ export default function Portfolio() {
           <div className="image-container">
             <img
               className="square-image"
-              src="/src/assets/images/square.png"
+              src="/src/assets/images/gray-square.png"
               id="square-image"
             />
             <div className="text-overlay">
@@ -54,13 +68,23 @@ export default function Portfolio() {
             </div>
           </div>
         </button>
-        <div className="ignitecs-project-text">
-          <p>
-            As a program organizer for the IgniteCS chapter at Sophia Academy, I
-            helped program the front-end for the new IgniteCS website!
-          </p>
-          <a href="https://ignite-cs.vercel.app/">Check it out here!</a>
-        </div>
+        <button
+          className="project-button"
+          aria-label="ignitecs button"
+          onClick={() =>
+            window.open(
+              "https://devpost.com/software/cosmic-connection",
+              "_blank"
+            )
+          }
+        >
+          <div className="image-container">
+            <img
+              className="project-image"
+              src="/src/assets/images/ignitecs.png"
+            />
+          </div>
+        </button>
       </div>
       <div className="project">
         <button
@@ -76,7 +100,7 @@ export default function Portfolio() {
           <div className="image-container">
             <img
               className="square-image"
-              src="/src/assets/images/square.png"
+              src="/src/assets/images/gray-square.png"
               id="square-image"
             />
             <div className="text-overlay">
@@ -86,23 +110,24 @@ export default function Portfolio() {
             </div>
           </div>
         </button>
-        <div className="project-text">
-          <p className="cosmic-text">
-            <span className="bold-sans">Hack @ Brown 2024 Entry: </span>A star
-            sign compatibility generator! Emails a match an AI generated
-            love-letter.
-          </p>
-          <iframe
-            className="cosmic-video"
-            width="320"
-            height="180"
-            src="https://www.youtube.com/embed/MxdVOOskPsU"
-            title="Cosmic Connection"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+        <div>
+          <button
+            className="project-button"
+            aria-label="cosmic connections button"
+            onClick={() =>
+              window.open(
+                "https://devpost.com/software/cosmic-connection",
+                "_blank"
+              )
+            }
+          >
+            <div className="image-container">
+              <img
+                className="project-image"
+                src="/src/assets/images/cosmic.png"
+              />
+            </div>
+          </button>
         </div>
       </div>
     </div>
