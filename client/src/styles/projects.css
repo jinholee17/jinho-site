@@ -1,0 +1,42 @@
+.cosmic-text {
+  font-family: "Open Sans Regular";
+  margin-left: 50px;
+  border-radius: 40px;
+}
+.cosmic-video {
+  margin-left: 300px;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.bold-cosmic {
+  font-weight: bold;
+  font-family: "Open Sans";
+  margin-left: 50px;
+}
+
+.cosmic-title {
+  font-family: "Digital Numbers";
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.project-text-box {
+  background-color: white;
+  border-radius: 40px;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Open Sans";
+}
+
+.cosmic-page {
+  background-color: #d0b2da;
+  padding-bottom: 500px;
+}

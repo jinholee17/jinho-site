@@ -1,20 +1,33 @@
 import { useState } from "react";
 import AboutMe from "./aboutme";
 import Home from "./home";
+import CosmicConnection from "./cosmic_connection";
 
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
+  COSMIC = "COSMIC",
 }
 
 export default function Website() {
   const [section, setSection] = useState<Section>(Section.HOME);
+
+  function scrollToTop() {
+    const targetDiv = document.getElementById("home-button");
+
+    if (targetDiv != null) {
+      targetDiv.scrollIntoView({ behavior: "instant" });
+    } else {
+      console.error("Could not find target div");
+    }
+  }
 
   return (
     <div>
       <header>
         <button
           className="home-button"
+          id="home-button"
           aria-label="Home Button"
           onClick={() => setSection(Section.HOME)}
         >
@@ -64,12 +77,17 @@ export default function Website() {
       </header>
       {section === Section.HOME ? <Home setSection={setSection} /> : null}
       {section === Section.ABOUTME ? <AboutMe setSection={setSection} /> : null}
+      {section === Section.COSMIC ? (
+        <CosmicConnection setSection={setSection} />
+      ) : null}
       <header>
         <p className="thanks-text">thanks for stopping by!</p>
         <button
           className="aboutme-button"
           aria-label="aboutme button"
-          onClick={() => setSection(Section.ABOUTME)}
+          onClick={() => {
+            setSection(Section.ABOUTME), scrollToTop();
+          }}
         >
           about me
         </button>
