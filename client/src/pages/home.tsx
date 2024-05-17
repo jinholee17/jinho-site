@@ -52,60 +52,128 @@ export default function Home(props: pageProps) {
         University. I'm interested in the intersections of CS and language, as
         well as creating accessible computer science education.
       </h1>
-      <button
-        className="square-button"
-        aria-label="square button"
-        onClick={() => changeImage()}
-      >
-        <div className="image-container">
-          <img
-            className="square-image"
-            src="/src/assets/images/square.png"
-            id="square-image"
-          />
-          <div className="text-overlay">
-            <p className="square-text" id="square-text">
-              face reveal
-            </p>
+      <div className="buttons">
+        <button
+          className="square-button"
+          aria-label="square button"
+          onClick={() => changeImage()}
+        >
+          <div className="image-container">
+            <img
+              className="square-image"
+              src="/src/assets/images/square.png"
+              id="square-image"
+            />
+            <div className="text-overlay">
+              <p className="square-text" id="square-text">
+                face reveal
+              </p>
+            </div>
           </div>
-        </div>
-      </button>
-      <button
-        className="diamond-button"
-        aria-label="diamond button"
-        onClick={() => props.setSection(Section.ABOUTME)}
-      >
-        <div className="image-container">
-          <img
-            className="diamond-image"
-            src="/src/assets/images/diamond.png"
-            id="diamond-image"
-          />
-          <div className="text-overlay">
-            <p className="diamond-text" id="diamond-text">
-              about me
-            </p>
+        </button>
+        <button
+          className="diamond-button"
+          aria-label="diamond button"
+          onClick={() => props.setSection(Section.ABOUTME)}
+        >
+          <div className="image-container">
+            <img
+              className="diamond-image"
+              src="/src/assets/images/diamond.png"
+              id="diamond-image"
+            />
+            <div className="text-overlay">
+              <p className="diamond-text" id="diamond-text">
+                about me
+              </p>
+            </div>
           </div>
-        </div>
-      </button>
-      <button
-        className="square-button"
-        aria-label="square button"
-        onClick={() => scrollToPortfolio()}
-      >
-        <div className="image-container">
-          <img
-            className="square-image"
-            src="/src/assets/images/square.png"
-            id="square-image"
-          />
-          <div className="text-overlay">
-            <p className="square-text" id="square-text">
-              portfolio
-            </p>
+        </button>
+        <button
+          className="square-button"
+          aria-label="square button"
+          onClick={() => scrollToPortfolio()}
+        >
+          <div className="image-container">
+            <img
+              className="square-image"
+              src="/src/assets/images/square.png"
+              id="square-image"
+            />
+            <div className="text-overlay">
+              <p className="square-text" id="square-text">
+                portfolio
+              </p>
+            </div>
           </div>
+        </button>
+        <div className="rectangle-stack">
+          <button
+            className="rectangle-button"
+            aria-label="rectangle button"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/document/d/16JF5fy8F_anR5J0NW3DCHFrc5VUXDOtn/edit?usp=sharing&ouid=104602903123943446095&rtpof=true&sd=true",
+                "_blank"
+              )
+            }
+          >
+            <div className="image-container">
+              <img
+                className="rectangle-image"
+                src="/src/assets/images/rectangle.png"
+                id="rectangle-image"
+              />
+              <div className="text-overlay">
+                <p className="square-text" id="square-text">
+                  resume
+                </p>
+              </div>
+            </div>
+          </button>
+          <button
+            className="rectangle-button"
+            aria-label="rectangle button"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/jinho-lee-23a30b217/",
+                "_blank"
+              )
+            }
+          >
+            <div className="image-container">
+              <img
+                className="rectangle-image"
+                src="/src/assets/images/rectangle.png"
+                id="rectangle-image"
+              />
+              <div className="text-overlay">
+                <p className="square-text" id="square-text">
+                  linkedin
+                </p>
+              </div>
+            </div>
+          </button>
+          <button
+            className="rectangle-button"
+            aria-label="rectangle button"
+            onClick={() => window.open("mailto:jinho_lee@brown.edu", "_blank")}
+          >
+            <div className="image-container">
+              <img
+                className="rectangle-image"
+                src="/src/assets/images/rectangle.png"
+                id="rectangle-image"
+              />
+              <div className="text-overlay">
+                <p className="square-text" id="square-text">
+                  email
+                </p>
+              </div>
+            </div>
+          </button>
         </div>
-      </button>
+      </div>
       <Portfolio></Portfolio>
     </div>
   );

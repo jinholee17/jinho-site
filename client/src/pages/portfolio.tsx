@@ -39,7 +39,7 @@ export default function Portfolio() {
         <button
           className="square-button"
           aria-label="square button"
-          // onClick={() => }
+          onClick={() => window.open("https://ignite-cs.vercel.app/", "_blank")}
         >
           <div className="image-container">
             <img
@@ -54,15 +54,24 @@ export default function Portfolio() {
             </div>
           </div>
         </button>
-        <div className="project-text">
-          <p>In a team of 4, we programmed a study spot generator.</p>
+        <div className="ignitecs-project-text">
+          <p>
+            As a program organizer for the IgniteCS chapter at Sophia Academy, I
+            helped program the front-end for the new IgniteCS website!
+          </p>
+          <a href="https://ignite-cs.vercel.app/">Check it out here!</a>
         </div>
       </div>
       <div className="project">
         <button
           className="square-button"
           aria-label="square button"
-          // onClick={() => }
+          onClick={() =>
+            window.open(
+              "https://devpost.com/software/cosmic-connection",
+              "_blank"
+            )
+          }
         >
           <div className="image-container">
             <img
