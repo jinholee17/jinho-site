@@ -52,6 +52,20 @@ export default function AboutMe(props: pageProps) {
           src="/src/assets/images/colorado.jpg"
         ></img>
       </div>
+      <div className="aboutme-pics">
+        <img
+          className="colorado-smiling-image"
+          src="/src/assets/images/face-reveal2.jpg"
+        ></img>
+        <img
+          className="andy-image"
+          src="/src/assets/images/andyhouse.jpg"
+        ></img>
+        <img
+          className="sunflower-image"
+          src="/src/assets/images/sunflowers.jpg"
+        ></img>
+      </div>
     </div>
   );
 }

@@ -15,6 +15,7 @@
 .home-button {
   font-family: "Digital Numbers";
   margin-top: 15px;
+  margin-right: 150px;
   height: 10vh;
   width: 40vh;
   font-size: 18px;
@@ -26,7 +27,7 @@
 }
 .aboutme-button {
   font-family: "Digital Numbers";
-  margin-left: 650px;
+  margin-left: 600px;
   margin-top: 15px;
   margin-right: 5px;
   height: 10vh;
@@ -82,6 +83,7 @@
 
 .thanks-text {
   font-family: "Digital Numbers";
+  font-size: 15px;
   padding-top: 30px;
   padding-left: 50px;
 }
