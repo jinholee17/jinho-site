@@ -4,6 +4,7 @@ import Home from "./home";
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
+  COSMIC = "COSMIC",
 }
 
 interface pageProps {

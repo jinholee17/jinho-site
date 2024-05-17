@@ -4,9 +4,24 @@ import Popup from "reactjs-popup";
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
+  COSMIC = "COSMIC",
 }
 
-export default function Portfolio() {
+interface pageProps {
+  setSection: React.Dispatch<React.SetStateAction<Section>>;
+}
+
+export default function Portfolio(props: pageProps) {
+  function scrollToTop() {
+    const targetDiv = document.getElementById("home-button");
+
+    if (targetDiv != null) {
+      targetDiv.scrollIntoView({ behavior: "instant" });
+    } else {
+      console.error("Could not find target div");
+    }
+  }
+
   return (
     <div className="lighter-purple-bg" id="lighter-purple-bg">
       <h1 aria-label="Portfolio Header" className="portfolio-text">
@@ -53,7 +68,9 @@ export default function Portfolio() {
         <button
           className="square-button"
           aria-label="square button"
-          onClick={() => window.open("https://ignite-cs.vercel.app/", "_blank")}
+          onClick={() => {
+            props.setSection(Section.COSMIC), scrollToTop();
+          }}
         >
           <div className="image-container">
             <img
@@ -71,12 +88,9 @@ export default function Portfolio() {
         <button
           className="project-button"
           aria-label="ignitecs button"
-          onClick={() =>
-            window.open(
-              "https://devpost.com/software/cosmic-connection",
-              "_blank"
-            )
-          }
+          onClick={() => {
+            props.setSection(Section.COSMIC), scrollToTop();
+          }}
         >
           <div className="image-container">
             <img
@@ -90,12 +104,9 @@ export default function Portfolio() {
         <button
           className="square-button"
           aria-label="square button"
-          onClick={() =>
-            window.open(
-              "https://devpost.com/software/cosmic-connection",
-              "_blank"
-            )
-          }
+          onClick={() => {
+            props.setSection(Section.COSMIC), scrollToTop();
+          }}
         >
           <div className="image-container">
             <img
@@ -114,12 +125,10 @@ export default function Portfolio() {
           <button
             className="project-button"
             aria-label="cosmic connections button"
-            onClick={() =>
-              window.open(
-                "https://devpost.com/software/cosmic-connection",
-                "_blank"
-              )
-            }
+            id="cosmic-connections"
+            onClick={() => {
+              props.setSection(Section.COSMIC), scrollToTop();
+            }}
           >
             <div className="image-container">
               <img

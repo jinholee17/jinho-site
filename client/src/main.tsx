@@ -5,6 +5,7 @@ import "./styles/index.css";
 import "./styles/home.css";
 import "./styles/aboutme.css";
 import "./styles/portfolio.css";
+import "./styles/projects.css";
 /**
  * Main function
  */

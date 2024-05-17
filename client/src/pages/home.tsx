@@ -5,6 +5,7 @@ import Portfolio from "./portfolio";
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
+  COSMIC = "COSMIC",
 }
 
 interface pageProps {
@@ -34,13 +35,22 @@ export default function Home(props: pageProps) {
   }
 
   function scrollToPortfolio() {
-    const scrollButton = document.getElementById("scrollButton");
     const targetDiv = document.getElementById("lighter-purple-bg");
 
     if (targetDiv != null) {
       targetDiv.scrollIntoView({ behavior: "smooth" });
     } else {
-      console.error("Could not find scroll button or target div");
+      console.error("Could not find target div");
+    }
+  }
+
+  function scrollToTop() {
+    const targetDiv = document.getElementById("home-button");
+
+    if (targetDiv != null) {
+      targetDiv.scrollIntoView({ behavior: "instant" });
+    } else {
+      console.error("Could not find target div");
     }
   }
 
@@ -74,7 +84,9 @@ export default function Home(props: pageProps) {
         <button
           className="diamond-button"
           aria-label="diamond button"
-          onClick={() => props.setSection(Section.ABOUTME)}
+          onClick={() => {
+            props.setSection(Section.ABOUTME), scrollToTop();
+          }}
         >
           <div className="image-container">
             <img
@@ -174,7 +186,7 @@ export default function Home(props: pageProps) {
           </button>
         </div>
       </div>
-      <Portfolio></Portfolio>
+      <Portfolio setSection={props.setSection} />
     </div>
   );
 }
