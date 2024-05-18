@@ -39,20 +39,17 @@ export default function Ignite(props: pageProps) {
       </button>
       <div className="project-text-box">
         <h1 className="cosmic-title">IgniteCS</h1>
-        <p className="bold-cosmic">Hack @ Brown 2024 Hackathon Entry: </p>
         <p className="cosmic-text">
-          A studyspot generator! Type in filters for your preferred study space,
-          and we will return the best options. Currently based in Providence,
-          RI, but can be customized for any area.
+          I am a program organizer for IgniteCS, which is a computer science
+          teaching organization for schools in the Providence area.
         </p>
         <img className="cosmic-image2" src="/src/assets/images/ignitecs.png" />
         <p className="cosmic-text">
-          I worked on both frontend and backend for this project. Julie and I
-          did research and data collection from students at Brown. I worked on
-          the ranking algorithm, a point-based system. We use Firestore to store
-          user's previous queries. I also did the integration of the frontend
-          and backend, making queries and pins on the Mapbox API of the best
-          study spots.
+          I also worked on some frontend for our new website. This was through
+          Full Stack at Brown, a club that creates websites/software for other
+          clubs at Brown. Through this experience, I got to see firsthand the
+          process of a team creating a lo-fi design of a website, to a full
+          sketch on figma, to bringing it to fruition in Typescript and React.
         </p>
       </div>
       <button

@@ -39,11 +39,13 @@ export default function LockIn(props: pageProps) {
       </button>
       <div className="project-text-box">
         <h1 className="cosmic-title">Lock In At Brown</h1>
-        <p className="bold-cosmic">Hack @ Brown 2024 Hackathon Entry: </p>
+        <p className="bold-cosmic">
+          Software Engineering Course Term Project:{" "}
+        </p>
         <p className="cosmic-text">
-          A studyspot generator! Type in filters for your preferred study space,
-          and we will return the best options. Currently based in Providence,
-          RI, but can be customized for any area.
+          A study spot generator! Type in filters for your preferred study
+          space, and we will return the best options. Currently based in
+          Providence, RI, but can be customized for any area.
         </p>
         <img className="cosmic-image2" src="/src/assets/images/lockedin.png" />
         <p className="cosmic-text">
