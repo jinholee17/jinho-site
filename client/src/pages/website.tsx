@@ -2,11 +2,15 @@ import { useState } from "react";
 import AboutMe from "./aboutme";
 import Home from "./home";
 import CosmicConnection from "./cosmic_connection";
+import LockIn from "./lockin";
+import Ignite from "./ignitecs";
 
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
   COSMIC = "COSMIC",
+  LOCKIN = "LOCKIN",
+  IGNITE = "IGNITE",
 }
 
 export default function Website() {
@@ -80,6 +84,8 @@ export default function Website() {
       {section === Section.COSMIC ? (
         <CosmicConnection setSection={setSection} />
       ) : null}
+      {section === Section.LOCKIN ? <LockIn setSection={setSection} /> : null}
+      {section === Section.IGNITE ? <Ignite setSection={setSection} /> : null}
       <header>
         <p className="thanks-text">thanks for stopping by!</p>
         <button

@@ -5,6 +5,8 @@ enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
   COSMIC = "COSMIC",
+  LOCKIN = "LOCKIN",
+  IGNITE = "IGNITE",
 }
 
 interface pageProps {
@@ -31,7 +33,9 @@ export default function Portfolio(props: pageProps) {
         <button
           className="square-button"
           aria-label="square button"
-          // onClick={() => }
+          onClick={() => {
+            props.setSection(Section.LOCKIN), scrollToTop();
+          }}
         >
           <div className="image-container">
             <img
@@ -49,12 +53,9 @@ export default function Portfolio(props: pageProps) {
         <button
           className="project-button"
           aria-label="lock in at brown button"
-          onClick={() =>
-            window.open(
-              "https://devpost.com/software/cosmic-connection",
-              "_blank"
-            )
-          }
+          onClick={() => {
+            props.setSection(Section.LOCKIN), scrollToTop();
+          }}
         >
           <div className="image-container">
             <img
@@ -69,7 +70,7 @@ export default function Portfolio(props: pageProps) {
           className="square-button"
           aria-label="square button"
           onClick={() => {
-            props.setSection(Section.COSMIC), scrollToTop();
+            props.setSection(Section.IGNITE), scrollToTop();
           }}
         >
           <div className="image-container">
@@ -89,7 +90,7 @@ export default function Portfolio(props: pageProps) {
           className="project-button"
           aria-label="ignitecs button"
           onClick={() => {
-            props.setSection(Section.COSMIC), scrollToTop();
+            props.setSection(Section.IGNITE), scrollToTop();
           }}
         >
           <div className="image-container">
