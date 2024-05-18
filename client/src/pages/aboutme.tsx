@@ -5,6 +5,8 @@ enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
   COSMIC = "COSMIC",
+  LOCKIN = "LOCKIN",
+  IGNITE = "IGNITE",
 }
 
 interface pageProps {
