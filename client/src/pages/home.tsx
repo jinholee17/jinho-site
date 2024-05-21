@@ -17,8 +17,8 @@ interface pageProps {
 export default function Home(props: pageProps) {
   // const imagePath1 = "/src/assets/images/square.png";
   // const imagePath2 = "/src/assets/images/face-reveal.png";
-  const imagePath1 = "/images/square.png";
-  const imagePath2 = "/images/face-reveal.png";
+  const imagePath1 = "/static/images/square.png";
+  const imagePath2 = "/static/images/face-reveal.png";
   let currentImagePath = imagePath1;
 
   function changeImage() {
