@@ -50,23 +50,17 @@ export default function AboutMe(props: pageProps) {
       </div>
       <div className="aboutme-pics">
         <img className="gates-image" src="/src/assets/images/gates.jpg"></img>
-        <img
-          className="colorado-image"
-          src="/src/assets/images/colorado.jpg"
-        ></img>
+        <img className="colorado-image" src="/static/images/colorado.jpg"></img>
       </div>
       <div className="aboutme-pics">
         <img
           className="colorado-smiling-image"
-          src="/src/assets/images/face-reveal2.jpg"
+          src="/static/images/face-reveal2.jpg"
         ></img>
-        <img
-          className="andy-image"
-          src="/src/assets/images/andyhouse.jpg"
-        ></img>
+        <img className="andy-image" src="/static/images/andyhouse.jpg"></img>
         <img
           className="sunflower-image"
-          src="/src/assets/images/sunflowers.jpg"
+          src="/static/images/sunflowers.jpg"
         ></img>
       </div>
     </div>

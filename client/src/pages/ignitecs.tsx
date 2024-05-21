@@ -45,7 +45,7 @@ export default function Ignite(props: pageProps) {
           weekly lessons teaching Scratch and HTML at Sophia Academy, a middle
           school in Providence.
         </p>
-        <img className="cosmic-image2" src="/src/assets/images/ignitecs.png" />
+        <img className="cosmic-image2" src="/static/images/ignitecs.png" />
         <p className="cosmic-text">
           I also worked on some frontend for our new website. This was through
           Full Stack at Brown, a club that creates websites/software for other
@@ -67,7 +67,7 @@ export default function Ignite(props: pageProps) {
           <div className="image-container">
             <img
               className="square-image"
-              src="/src/assets/images/square.png"
+              src="/static/images/square.png"
               id="square-image"
             />
             <div className="text-overlay">
@@ -80,7 +80,7 @@ export default function Ignite(props: pageProps) {
         <div className="ignite-team">
           <img
             className="ignite-team-pic"
-            src="/src/assets/images/ignite-team.jpg"
+            src="/static/images/ignite-team.jpg"
           />
           <p className="ignite-team-text">My team at Sophia Academy!</p>
         </div>

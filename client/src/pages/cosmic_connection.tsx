@@ -44,7 +44,7 @@ export default function CosmicConnection(props: pageProps) {
           A star sign compatibility generator! Emails a match an AI generated
           love-letter.
         </p>
-        <img className="cosmic-image2" src="/src/assets/images/cosmic.png" />
+        <img className="cosmic-image2" src="/static/images/cosmic.png" />
         <p className="cosmic-text">
           My teammates were: Alyssa, Audrey, and Lana. This was all four of us's
           first hackathon, as well as project like this. It was a challenging
@@ -89,7 +89,7 @@ export default function CosmicConnection(props: pageProps) {
         <div className="image-container">
           <img
             className="square-image"
-            src="/src/assets/images/square.png"
+            src="/static/images/square.png"
             id="square-image"
           />
           <div className="text-overlay">
