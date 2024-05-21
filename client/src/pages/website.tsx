@@ -28,7 +28,7 @@ export default function Website() {
 
   return (
     <div>
-      <header>
+      <header className="website-top-header">
         <button
           className="home-button"
           id="home-button"

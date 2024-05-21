@@ -11,11 +11,7 @@ import Website from "./pages/website";
  * @returns The entire Map app and its relative components
  */
 function App() {
-  return (
-    <div className="App">
-      <Website />
-    </div>
-  );
+  return <Website />;
 }
 
 export default App;
