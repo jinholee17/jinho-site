@@ -12,6 +12,17 @@
   font-style: normal;
 }
 
+.website-top-header {
+  position: fixed;
+  padding-top: 0px;
+  margin-top: 0px;
+  top: 0px;
+  width: 100%;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
 .home-button {
   font-family: "Digital Numbers";
   margin-top: 15px;
