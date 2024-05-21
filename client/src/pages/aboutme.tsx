@@ -36,8 +36,9 @@ export default function AboutMe(props: pageProps) {
           enjoy running, making lattes, reading poetry, and playing connections!
         </p>
         <p className="aboutme-paragraph">
-          Ask me about my favorite restaurants in Cambridge or Taylor Swift’s
-          discography!
+          I made this website using Typescript and React, and deployed using
+          Vercel. Ask me about my favorite restaurants in Cambridge or Taylor
+          Swift’s discography!
         </p>
         <iframe
           src="https://open.spotify.com/embed/playlist/6tS9viY0xw6ccuppOcB2bX?utm_source=generator"
