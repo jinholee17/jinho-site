@@ -49,7 +49,7 @@ export default function AboutMe(props: pageProps) {
         ></iframe>
       </div>
       <div className="aboutme-pics">
-        <img className="gates-image" src="/src/assets/images/gates.jpg"></img>
+        <img className="gates-image" src="/static/images/gates.jpg"></img>
         <img className="colorado-image" src="/static/images/colorado.jpg"></img>
       </div>
       <div className="aboutme-pics">
