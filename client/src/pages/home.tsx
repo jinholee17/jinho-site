@@ -104,7 +104,7 @@ export default function Home(props: pageProps) {
           </div>
         </button>
         <button
-          className="square-button"
+          className="square-portfolio-button"
           aria-label="square button"
           onClick={() => scrollToPortfolio()}
         >

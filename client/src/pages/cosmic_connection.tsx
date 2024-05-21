@@ -46,21 +46,23 @@ export default function CosmicConnection(props: pageProps) {
         </p>
         <img className="cosmic-image2" src="/src/assets/images/cosmic.png" />
         <p className="cosmic-text">
-          I primarily worked on the backend for this project, which included:
-          calculating the 78 combinations of star signs to find each
-          compatibility, fetching calls to the Open-AI API to access the
-          prompt-to-text model to generate a love letter personalized to the
-          person, and emailing it to them using the javax.mail library. We made
-          our website using Typescript, React, and Java.
+          My teammates were: Alyssa, Audrey, and Lana. This was all four of us's
+          first hackathon, as well as project like this. It was a challenging
+          process navigating full stack development and working as a team in a
+          short period of time to create a larger-scale project. Another
+          challenge was that all of us came into this project with very
+          different skillsets. As someone who had extremely limited front-end
+          experience prior to this, this project was very much a learning curve
+          for me. This made it all the more rewarding in the end!
         </p>
         <p className="cosmic-text">
-          All four of us on the team were first time hackers so it was a
-          challenging process navigating full stack development and working as a
-          team in a short period of time to create a large project. All of us
-          came into this project with very different skillsets as well. As
-          someone who had extremely limited front-end experience prior to this,
-          this project was very much a learning curve for me, and it was super
-          rewarding in the end.
+          I primarily worked on the backend for this project. We calculated the
+          78 combinations of star signs to find each individual compatibility of
+          every pair of signs. I programmed calls to the Open-AI API to access
+          the prompt-to-text model to generate a love letter personalized to the
+          user's person of choice. I then programmed an emailing option to the
+          user's person of choice, using the javax.mail library. We made our
+          website using Typescript, React, and Java.
         </p>
       </div>
       <iframe

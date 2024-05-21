@@ -45,6 +45,7 @@
   display: flex;
 }
 .square-button,
+.square-portfolio-button,
 .diamond-button {
   background-color: transparent;
   border: 0;
@@ -97,6 +98,9 @@
 .square-button:hover .square-image {
   opacity: 0.8; /* Reduce opacity on hover */
 }
+.square-portfolio-button:hover .square-image {
+  opacity: 0.8;
+}
 
 .diamond-button:hover .diamond-image {
   opacity: 0.8; /* Reduce opacity on hover */
@@ -133,4 +137,20 @@
 
 .purple-bg {
   background-color: #bca7d7;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.square-portfolio-button {
+  animation: float 3s ease-in-out infinite;
 }
