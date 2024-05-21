@@ -47,10 +47,7 @@ export default function LockIn(props: pageProps) {
         </p>
         <div>
           <video className="lockin-video" width="600" autoPlay loop>
-            <source
-              src="/src/assets/images/lockin-video.mp4"
-              type="video/mp4"
-            />
+            <source src="/static/videos/lockin-video.mp4" type="video/mp4" />
           </video>
         </div>
         {/* <img className="cosmic-image2" src="/src/assets/images/lockedin.png" /> */}
@@ -85,7 +82,7 @@ export default function LockIn(props: pageProps) {
         <div className="image-container">
           <img
             className="square-image"
-            src="/src/assets/images/square.png"
+            src="/static/images/square.png"
             id="square-image"
           />
           <div className="text-overlay">

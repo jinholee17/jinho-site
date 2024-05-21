@@ -40,7 +40,7 @@ export default function Portfolio(props: pageProps) {
           <div className="image-container">
             <img
               className="square-image"
-              src="/src/assets/images/gray-square.png"
+              src="/static/images/gray-square.png"
               id="square-image"
             />
             <div className="text-overlay">
@@ -58,10 +58,7 @@ export default function Portfolio(props: pageProps) {
           }}
         >
           <div className="image-container">
-            <img
-              className="project-image"
-              src="/src/assets/images/lockedin.png"
-            />
+            <img className="project-image" src="/static/images/lockedin.png" />
           </div>
         </button>
       </div>
@@ -76,7 +73,7 @@ export default function Portfolio(props: pageProps) {
           <div className="image-container">
             <img
               className="square-image"
-              src="/src/assets/images/gray-square.png"
+              src="/static/images/gray-square.png"
               id="square-image"
             />
             <div className="text-overlay">
@@ -94,10 +91,7 @@ export default function Portfolio(props: pageProps) {
           }}
         >
           <div className="image-container">
-            <img
-              className="project-image"
-              src="/src/assets/images/ignitecs.png"
-            />
+            <img className="project-image" src="/static/images/ignitecs.png" />
           </div>
         </button>
       </div>
@@ -112,7 +106,7 @@ export default function Portfolio(props: pageProps) {
           <div className="image-container">
             <img
               className="square-image"
-              src="/src/assets/images/gray-square.png"
+              src="/static/images/gray-square.png"
               id="square-image"
             />
             <div className="text-overlay">
@@ -132,10 +126,7 @@ export default function Portfolio(props: pageProps) {
             }}
           >
             <div className="image-container">
-              <img
-                className="project-image"
-                src="/src/assets/images/cosmic.png"
-              />
+              <img className="project-image" src="/static/images/cosmic.png" />
             </div>
           </button>
         </div>

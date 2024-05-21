@@ -74,7 +74,7 @@ export default function Home(props: pageProps) {
           <div className="image-container">
             <img
               className="square-image"
-              src="/src/assets/images/square.png"
+              src="/static/images/square.png"
               id="square-image"
             />
             <div className="text-overlay">
@@ -94,7 +94,7 @@ export default function Home(props: pageProps) {
           <div className="image-container">
             <img
               className="diamond-image"
-              src="/src/assets/images/diamond.png"
+              src="/static/images/diamond.png"
               id="diamond-image"
             />
             <div className="text-overlay">
@@ -112,7 +112,7 @@ export default function Home(props: pageProps) {
           <div className="image-container">
             <img
               className="square-image"
-              src="/src/assets/images/square.png"
+              src="/static/images/square.png"
               id="square-image"
             />
             <div className="text-overlay">
@@ -136,7 +136,7 @@ export default function Home(props: pageProps) {
             <div className="image-container">
               <img
                 className="rectangle-image"
-                src="/src/assets/images/rectangle.png"
+                src="/static/images/rectangle.png"
                 id="rectangle-image"
               />
               <div className="text-overlay">
@@ -159,7 +159,7 @@ export default function Home(props: pageProps) {
             <div className="image-container">
               <img
                 className="rectangle-image"
-                src="/src/assets/images/rectangle.png"
+                src="/static/images/rectangle.png"
                 id="rectangle-image"
               />
               <div className="text-overlay">
@@ -177,7 +177,7 @@ export default function Home(props: pageProps) {
             <div className="image-container">
               <img
                 className="rectangle-image"
-                src="/src/assets/images/rectangle.png"
+                src="/static/images/rectangle.png"
                 id="rectangle-image"
               />
               <div className="text-overlay">

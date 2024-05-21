@@ -49,7 +49,7 @@ export default function Website() {
           aria-label="email button"
           onClick={() => window.open("mailto:jinho_lee@brown.edu", "_blank")}
         >
-          <img className="email-image" src="/src/assets/images/email.png" />
+          <img className="email-image" src="/static/images/email.png" />
         </button>
         <button
           className="linkedin-button"
@@ -61,10 +61,7 @@ export default function Website() {
             )
           }
         >
-          <img
-            className="linkedin-image"
-            src="/src/assets/images/linkedin.png"
-          />
+          <img className="linkedin-image" src="/static/images/linkedin.png" />
         </button>
         <button
           className="resume-button"
@@ -76,7 +73,7 @@ export default function Website() {
             )
           }
         >
-          <img className="resume-image" src="/src/assets/images/resume.png" />
+          <img className="resume-image" src="/static/images/resume.png" />
         </button>
       </header>
       {section === Section.HOME ? <Home setSection={setSection} /> : null}
@@ -102,7 +99,7 @@ export default function Website() {
           aria-label="email button"
           onClick={() => window.open("mailto:jinho_lee@brown.edu", "_blank")}
         >
-          <img className="email-image" src="/src/assets/images/email.png" />
+          <img className="email-image" src="/static/images/email.png" />
         </button>
         <button
           className="linkedin-button"
@@ -114,10 +111,7 @@ export default function Website() {
             )
           }
         >
-          <img
-            className="linkedin-image"
-            src="/src/assets/images/linkedin.png"
-          />
+          <img className="linkedin-image" src="/static/images/linkedin.png" />
         </button>
         <button
           className="resume-button"
@@ -129,7 +123,7 @@ export default function Website() {
             )
           }
         >
-          <img className="resume-image" src="/src/assets/images/resume.png" />
+          <img className="resume-image" src="/static/images/resume.png" />
         </button>
       </header>
     </div>
