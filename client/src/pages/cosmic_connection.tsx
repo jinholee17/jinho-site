@@ -66,40 +66,42 @@ export default function CosmicConnection(props: pageProps) {
           website using Typescript, React, and Java.
         </p>
       </div>
-      <iframe
-        className="cosmic-video"
-        width="320"
-        height="180"
-        src="https://www.youtube.com/embed/MxdVOOskPsU"
-        title="Cosmic Connection"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-      <button
-        className="square-button"
-        aria-label="square button"
-        onClick={() =>
-          window.open(
-            "https://devpost.com/software/cosmic-connection",
-            "_blank"
-          )
-        }
-      >
-        <div className="image-container">
-          <img
-            className="square-image"
-            src="/static/images/square.png"
-            id="square-image"
-          />
-          <div className="text-overlay">
-            <p className="square-text" id="square-text">
-              Check out the devpost here!
-            </p>
+      <div className="cosmic-vid-button">
+        <iframe
+          className="cosmic-video"
+          width="320"
+          height="180"
+          src="https://www.youtube.com/embed/MxdVOOskPsU"
+          title="Cosmic Connection"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        <button
+          className="square-button"
+          aria-label="square button"
+          onClick={() =>
+            window.open(
+              "https://devpost.com/software/cosmic-connection",
+              "_blank"
+            )
+          }
+        >
+          <div className="image-container">
+            <img
+              className="square-image"
+              src="/static/images/square.png"
+              id="square-image"
+            />
+            <div className="text-overlay">
+              <p className="square-text" id="square-text">
+                Check out the devpost here!
+              </p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
+      </div>
     </div>
   );
 }
