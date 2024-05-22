@@ -25,10 +25,11 @@
 }
 
 .cosmic-image2 {
-  max-width: 500px;
+  max-width: 70%;
   /* width: 500px; */
   border-radius: 40px;
   margin: auto;
+  margin-bottom: 20px;
   background-color: transparent;
 }
 
