@@ -16,7 +16,11 @@ export default function Ignite(props: pageProps) {
     const targetDiv = document.getElementById("lighter-purple-bg");
 
     if (targetDiv != null) {
-      targetDiv.scrollIntoView({ behavior: "instant" });
+      const targetOffset = targetDiv.offsetTop - 40;
+      window.scrollTo({
+        top: targetOffset,
+        behavior: "instant",
+      });
     } else {
       console.error("Could not find target div");
     }

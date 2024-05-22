@@ -16,14 +16,14 @@ export default function CosmicConnection(props: pageProps) {
     const targetDiv = document.getElementById("lighter-purple-bg");
 
     if (targetDiv != null) {
-      targetDiv.scrollIntoView({ behavior: "instant" });
+      const targetOffset = targetDiv.offsetTop - 40;
+      window.scrollTo({
+        top: targetOffset,
+        behavior: "instant",
+      });
     } else {
       console.error("Could not find target div");
     }
-  }
-
-  function delay(ms: number) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
   return (
