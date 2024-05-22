@@ -1,6 +1,15 @@
 .aboutme-page {
   background-color: #e5f4f9;
-  padding-bottom: 500px;
+  padding-bottom: 100px;
+}
+
+.aboutme-page-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 50px;
 }
 
 .aboutme-header {
@@ -20,11 +29,9 @@
   font-family: "Open Sans Regular";
   border-radius: 30px;
   background-color: white;
-  padding-bottom: 40px;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-right: 150px;
-  padding-left: 150px;
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
 }
 
 .back-home-button {
@@ -35,47 +42,59 @@
 
   height: 10vh;
   width: 40vh;
+  max-width: 40vh;
   font-size: 15px;
   border: none;
   cursor: pointer;
   background-color: transparent;
-  font-weight: bold;
-  justify-self: center;
 }
 
-.gates-image {
-  margin-left: 50px;
-  margin-bottom: 100px;
-  border-radius: 40px;
+.aboutme-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
 
-  height: 300px;
+  margin: auto;
+  gap: 20px;
+}
+
+/* .gates-image,
+.colorado-image,
+.colorado-smiling-image,
+.andy-image,
+.sunflower-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 40px;
+  margin: auto;
+} */
+
+.gates-image {
+  border-radius: 40px;
+  max-height: 300px;
 }
 
 .colorado-image {
-  margin-left: 50px;
-  margin-top: 100px;
   border-radius: 40px;
 
-  height: 500px;
+  max-height: 500px;
 }
 .colorado-smiling-image {
-  margin-left: 80px;
   margin-top: 80px;
   border-radius: 100px;
-  margin-bottom: 100px;
   height: 300px;
 }
 
 .andy-image {
-  margin-left: 50px;
-  margin-top: 150px;
-  margin-bottom: 50px;
+  margin-top: 100px;
   border-radius: 40px;
 
   height: 300px;
 }
 .sunflower-image {
-  margin-left: 50px;
   margin-top: 80px;
   border-radius: 40px;
 
