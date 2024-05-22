@@ -20,6 +20,7 @@
 }
 .cosmic-vid-button {
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
   margin: auto;
 }
