@@ -28,6 +28,7 @@ export default function Website() {
 
   return (
     <div>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <header className="website-top-header">
         <button
           className="home-button"

@@ -22,6 +22,7 @@
   padding-right: 80px;
   padding-top: 30px;
   padding-bottom: 50px;
+
   /* overflow: hidden;
   border-right: 0.15em solid #000000;
   animation: typing 3s steps(55, end), blink-caret 1s step-end infinite; */
@@ -43,6 +44,9 @@
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 .square-button,
 .square-portfolio-button,
@@ -50,9 +54,8 @@
   background-color: transparent;
   border: 0;
   font-family: "Digital Numbers";
-  margin-left: 100px;
+  margin: 5px;
   cursor: pointer;
-  margin-top: 5px;
 }
 
 .rectangle-button {
@@ -61,15 +64,16 @@
   font-family: "Digital Numbers";
   /* margin-left: 100px; */
   cursor: pointer;
-  margin-top: 5px;
+  margin: 5px;
   size: 50%;
-  margin-right: 150px;
-  margin-left: 100px;
 }
 
-/* .rectangle-stack {
+.rectangle-stack {
   display: flex;
-} */
+  flex-direction: column;
+  align-items: center; /* Center align the buttons */
+  gap: 0px;
+}
 
 .image-container {
   position: relative;
@@ -93,6 +97,7 @@
 .diamond-image {
   height: 150px;
   position: relative;
+  width: auto;
 }
 
 .square-button:hover .square-image {
@@ -112,6 +117,7 @@
 
 .rectangle-image {
   height: 40px;
+  width: auto;
 }
 
 /* The typing effect */
