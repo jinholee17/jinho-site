@@ -18,6 +18,7 @@ export default function AboutMe(props: pageProps) {
     <div className="aboutme-page">
       <button
         className="back-home-button"
+        id="back-home-button"
         aria-label="Home Button"
         onClick={() => props.setSection(Section.HOME)}
       >

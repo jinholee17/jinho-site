@@ -22,14 +22,11 @@ export default function Ignite(props: pageProps) {
     }
   }
 
-  function delay(ms: number) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
-
   return (
     <div className="ignite-page">
       <button
         className="back-home-button"
+        id="back-home-button"
         aria-label="Home Button"
         onClick={() => {
           scrollToPortfolio();

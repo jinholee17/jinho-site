@@ -16,8 +16,9 @@ enum Section {
 export default function Website() {
   const [section, setSection] = useState<Section>(Section.HOME);
 
-  function scrollToTop() {
-    const targetDiv = document.getElementById("home-button");
+  async function scrollToTop() {
+    await setSection(Section.ABOUTME);
+    const targetDiv = document.getElementById("back-home-button");
 
     if (targetDiv != null) {
       targetDiv.scrollIntoView({ behavior: "instant" });
@@ -41,7 +42,7 @@ export default function Website() {
         <button
           className="aboutme-button"
           aria-label="aboutme button"
-          onClick={() => setSection(Section.ABOUTME)}
+          onClick={() => scrollToTop()}
         >
           about me
         </button>
@@ -90,7 +91,7 @@ export default function Website() {
           className="aboutme-button"
           aria-label="aboutme button"
           onClick={() => {
-            setSection(Section.ABOUTME), scrollToTop();
+            scrollToTop();
           }}
         >
           about me
