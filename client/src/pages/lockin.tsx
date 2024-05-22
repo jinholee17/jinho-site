@@ -26,10 +26,6 @@ export default function LockIn(props: pageProps) {
     }
   }
 
-  function delay(ms: number) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
-
   return (
     <div className="lockin-page">
       <button
@@ -50,8 +46,8 @@ export default function LockIn(props: pageProps) {
           space, and we will return the best options. Currently based in
           Providence, RI, but can be customized for any area.
         </p>
-        <div>
-          <video className="lockin-video" width="600" autoPlay loop>
+        <div className="lockin-video-div">
+          <video className="lockin-video" autoPlay loop>
             <source src="/static/videos/lockin-video.mp4" type="video/mp4" />
           </video>
         </div>
