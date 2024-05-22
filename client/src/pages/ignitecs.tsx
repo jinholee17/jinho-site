@@ -61,7 +61,7 @@ export default function Ignite(props: pageProps) {
       </div>
       <div className="ignite-bottom">
         <button
-          className="lockin-square-button"
+          className="ignite-square-button"
           aria-label="square button"
           onClick={() => window.open("https://ignite-cs.vercel.app/", "_blank")}
         >
