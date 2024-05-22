@@ -110,7 +110,7 @@
 
 .lockin-video-div {
   margin: auto;
-  width: 600px;
+  /* width: 600px; */
   max-width: 600px;
   margin-top: 20px;
   justify-content: center;
@@ -118,7 +118,7 @@
 }
 
 .lockin-video {
-  width: 600px;
+  /* width: 600px; */
   max-width: 600px;
 }
 
@@ -145,5 +145,5 @@
 .ignite-team-text {
   margin-top: 0px;
   max-width: 250px;
-  width: 250px;
+  /* width: 250px; */
 }
