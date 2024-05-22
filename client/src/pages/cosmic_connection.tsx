@@ -30,6 +30,7 @@ export default function CosmicConnection(props: pageProps) {
     <div className="cosmic-page">
       <button
         className="back-home-button"
+        id="back-home-button"
         aria-label="Home Button"
         onClick={() => {
           scrollToPortfolio();

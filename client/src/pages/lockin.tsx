@@ -30,6 +30,7 @@ export default function LockIn(props: pageProps) {
     <div className="lockin-page">
       <button
         className="back-home-button"
+        id="back-home-button"
         aria-label="Home Button"
         onClick={() => {
           scrollToPortfolio();

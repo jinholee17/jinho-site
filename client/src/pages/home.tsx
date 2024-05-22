@@ -47,8 +47,9 @@ export default function Home(props: pageProps) {
     }
   }
 
-  function scrollToTop() {
-    const targetDiv = document.getElementById("home-button");
+  async function scrollToTop() {
+    await props.setSection(Section.ABOUTME);
+    const targetDiv = document.getElementById("back-home-button");
 
     if (targetDiv != null) {
       targetDiv.scrollIntoView({ behavior: "instant" });
@@ -88,7 +89,7 @@ export default function Home(props: pageProps) {
           className="diamond-button"
           aria-label="diamond button"
           onClick={() => {
-            props.setSection(Section.ABOUTME), scrollToTop();
+            scrollToTop();
           }}
         >
           <div className="image-container">

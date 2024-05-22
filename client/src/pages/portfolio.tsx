@@ -14,8 +14,9 @@ interface pageProps {
 }
 
 export default function Portfolio(props: pageProps) {
-  function scrollToTop() {
-    const targetDiv = document.getElementById("home-button");
+  async function scrollToTop(sect: Section) {
+    await props.setSection(sect);
+    const targetDiv = document.getElementById("back-home-button");
 
     if (targetDiv != null) {
       targetDiv.scrollIntoView({ behavior: "instant" });
@@ -23,7 +24,6 @@ export default function Portfolio(props: pageProps) {
       console.error("Could not find target div");
     }
   }
-
   return (
     <div className="lighter-purple-bg" id="lighter-purple-bg">
       <h1 aria-label="Portfolio Header" className="portfolio-text">
@@ -34,7 +34,7 @@ export default function Portfolio(props: pageProps) {
           className="square-button"
           aria-label="square button"
           onClick={() => {
-            props.setSection(Section.LOCKIN), scrollToTop();
+            scrollToTop(Section.LOCKIN);
           }}
         >
           <div className="image-container">
@@ -54,7 +54,7 @@ export default function Portfolio(props: pageProps) {
           className="project-button"
           aria-label="lock in at brown button"
           onClick={() => {
-            props.setSection(Section.LOCKIN), scrollToTop();
+            scrollToTop(Section.LOCKIN);
           }}
         >
           <div className="image-container">
@@ -67,7 +67,7 @@ export default function Portfolio(props: pageProps) {
           className="square-button"
           aria-label="square button"
           onClick={() => {
-            props.setSection(Section.IGNITE), scrollToTop();
+            scrollToTop(Section.IGNITE);
           }}
         >
           <div className="image-container">
@@ -87,7 +87,7 @@ export default function Portfolio(props: pageProps) {
           className="project-button"
           aria-label="ignitecs button"
           onClick={() => {
-            props.setSection(Section.IGNITE), scrollToTop();
+            scrollToTop(Section.IGNITE);
           }}
         >
           <div className="image-container">
@@ -100,7 +100,7 @@ export default function Portfolio(props: pageProps) {
           className="square-button"
           aria-label="square button"
           onClick={() => {
-            props.setSection(Section.COSMIC), scrollToTop();
+            scrollToTop(Section.COSMIC);
           }}
         >
           <div className="image-container">
@@ -122,7 +122,7 @@ export default function Portfolio(props: pageProps) {
             aria-label="cosmic connections button"
             id="cosmic-connections"
             onClick={() => {
-              props.setSection(Section.COSMIC), scrollToTop();
+              scrollToTop(Section.COSMIC);
             }}
           >
             <div className="image-container">
