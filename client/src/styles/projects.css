@@ -117,7 +117,7 @@
 .lockin-video-div {
   margin: auto;
   /* width: 600px; */
-  max-width: 600px;
+  max-width: 70%;
   margin-top: 20px;
   justify-content: center;
   margin-bottom: 20px;
@@ -125,7 +125,8 @@
 
 .lockin-video {
   /* width: 600px; */
-  max-width: 600px;
+  /* max-width: 600px; */
+  width: 100%;
 }
 
 .ignite-bottom {
