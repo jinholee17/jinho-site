@@ -52,7 +52,11 @@ export default function Home(props: pageProps) {
     const targetDiv = document.getElementById("back-home-button");
 
     if (targetDiv != null) {
-      targetDiv.scrollIntoView({ behavior: "instant" });
+      const targetOffset = targetDiv.offsetTop - 50;
+      window.scrollTo({
+        top: targetOffset,
+        behavior: "instant",
+      });
     } else {
       console.error("Could not find target div");
     }

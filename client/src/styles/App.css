@@ -46,6 +46,7 @@
   background-color: transparent;
   font-weight: bold;
   justify-self: center;
+  color: black;
 }
 .aboutme-button {
   font-family: "Digital Numbers";
@@ -59,7 +60,7 @@
   cursor: pointer;
   background-color: transparent;
   font-weight: bold;
-  /* justify-self: right; */
+  color: black;
 }
 
 .email-button {
