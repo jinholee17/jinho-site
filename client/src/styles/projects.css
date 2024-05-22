@@ -64,6 +64,7 @@
   position: block;
   /* overflow-x: hidden; */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -73,6 +74,7 @@
   position: block;
   /* overflow-x: hidden; */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -82,6 +84,7 @@
   position: block;
   /* overflow-x: hidden; */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
