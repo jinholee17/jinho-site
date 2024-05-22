@@ -116,6 +116,10 @@
   opacity: 0.8; /* Reduce opacity on hover */
 }
 
+.ignite-square-button:hover .square-image {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
 .lockin-video-div {
   margin: auto;
   /* width: 600px; */

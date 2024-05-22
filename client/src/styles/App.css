@@ -47,8 +47,7 @@
   font-family: "Digital Numbers";
   margin-top: 15px;
   margin-right: 10px;
-  height: 10vh;
-  width: 40vh;
+  max-width: 100%;
   font-size: 18px;
   border: none;
   cursor: pointer;
@@ -62,7 +61,7 @@
   margin-top: 15px;
   margin-left: auto;
   margin-right: 10px;
-  height: 10vh;
+  max-width: 100%;
 
   font-size: 17px;
   border: none;
@@ -73,8 +72,9 @@
 }
 
 .email-button {
-  margin-top: 25px;
-  height: 10vh;
+  max-height: 20%;
+  max-width: 20%;
+  margin-top: 15px;
   margin-right: 10px;
   font-size: 24px;
   border: none;
@@ -84,9 +84,10 @@
 }
 
 .linkedin-button {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-right: 10px;
-  height: 10vh;
+  max-height: 20%;
+  max-width: 20%;
   font-size: 24px;
   border: none;
   cursor: pointer;
@@ -95,9 +96,10 @@
 }
 
 .resume-button {
-  margin-top: 25px;
+  margin-top: 15px;
   /* margin-right: 5px; */
-  height: 10vh;
+  max-height: 20%;
+  max-width: 20%;
   /* width: 5vh; */
   border: none;
   cursor: pointer;
@@ -109,7 +111,8 @@
 .linkedin-image,
 .resume-image,
 .email-image {
-  height: 50%;
+  height: 75%;
+  width: 75%;
 }
 
 .thanks-text {
