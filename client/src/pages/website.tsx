@@ -89,7 +89,7 @@ export default function Website() {
       ) : null}
       {section === Section.LOCKIN ? <LockIn setSection={setSection} /> : null}
       {section === Section.IGNITE ? <Ignite setSection={setSection} /> : null}
-      <header>
+      <header className="website-bottom-header">
         <p className="thanks-text">thanks for stopping by!</p>
         <button
           className="aboutme-button"
