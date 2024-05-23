@@ -64,7 +64,7 @@ export default function Home(props: pageProps) {
 
   return (
     <div className="purple-bg">
-      <h1 aria-label="Introduction Text" className="hello-text">
+      <h1 aria-label="Introduction Text" className="hello-text" id="hello-text">
         Hi! I’m <span className="bold-sans">Jinho</span>! I’m a full-stack
         developer studying computer science and literary arts at Brown
         University. I'm interested in the intersections of CS and language, as

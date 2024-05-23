@@ -16,10 +16,14 @@ enum Section {
 export default function Website() {
   const [section, setSection] = useState<Section>(Section.HOME);
 
-  async function scrollToTop() {
-    await setSection(Section.ABOUTME);
-    const targetDiv = document.getElementById("back-home-button");
-
+  async function scrollToTop(props: Section) {
+    await setSection(props);
+    let targetDiv;
+    if (props == Section.ABOUTME) {
+      targetDiv = document.getElementById("back-home-button");
+    } else {
+      targetDiv = document.getElementById("hello-text");
+    }
     if (targetDiv != null) {
       const targetOffset = targetDiv.offsetTop - 50;
       window.scrollTo({
@@ -39,14 +43,14 @@ export default function Website() {
           className="home-button"
           id="home-button"
           aria-label="Home Button"
-          onClick={() => setSection(Section.HOME)}
+          onClick={() => scrollToTop(Section.HOME)}
         >
           Jinho Lee
         </button>
         <button
           className="aboutme-button"
           aria-label="aboutme button"
-          onClick={() => scrollToTop()}
+          onClick={() => scrollToTop(Section.ABOUTME)}
         >
           about me
         </button>
@@ -95,7 +99,7 @@ export default function Website() {
           className="aboutme-button"
           aria-label="aboutme button"
           onClick={() => {
-            scrollToTop();
+            scrollToTop(Section.ABOUTME);
           }}
         >
           about me
