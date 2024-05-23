@@ -132,7 +132,7 @@
   .email-button,
   .linkedin-button,
   .resume-button {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    font-size: 10px; /* Adjust font size for smaller screens */
     margin-top: 10px;
     margin-right: 5px;
   }
@@ -140,14 +140,14 @@
   .linkedin-image,
   .resume-image,
   .email-image {
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 60%;
   }
 
   .website-top-header,
   .website-bottom-header {
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
   .thanks-text {
