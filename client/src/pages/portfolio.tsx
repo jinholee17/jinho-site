@@ -114,7 +114,7 @@ export default function Portfolio(props: pageProps) {
               id="square-image"
             />
             <div className="text-overlay">
-              <p className="square-text" id="square-text">
+              <p className="square-text2" id="square-text">
                 Cosmic Connection
               </p>
             </div>
