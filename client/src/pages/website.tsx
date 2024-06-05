@@ -136,16 +136,6 @@ export default function Website() {
           <img className="resume-image" src="/static/images/resume.png" />
         </button>
       </header>
-      <body>
-        <h1>Documentation</h1>
-        <p>Select the documentation version you want to view:</p>
-        <a href="client/index.html" className="button">
-          Main
-        </a>
-        <a href="test/index.html" className="button">
-          Test
-        </a>
-      </body>
     </div>
   );
 }
