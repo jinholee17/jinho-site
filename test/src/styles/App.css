@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/src/styles/fonts/NotoSansJP-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Digital Numbers";
+  src: url("/src/assets/fonts/DigitalNumbers-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.website-top-header {
+  position: fixed;
+  padding-top: 10px;
+  margin-top: 0px;
+  top: 0px;
+  width: 100%;
+  /* max-width: 100%; */
+  padding-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  justify-content: space-between;
+}
+
+.website-bottom-header {
+  padding-top: 5px;
+  /* top: 0px; */
+  width: 100%;
+  /* max-width: 100%; */
+  z-index: 1000;
+  justify-content: space-between;
+}
+
+.home-button,
+.aboutme-button,
+.email-button,
+.linkedin-button,
+.resume-button {
+  display: flex;
+  align-items: center;
+}
+
+.home-button {
+  font-family: "Digital Numbers";
+  margin-top: 15px;
+  margin-right: 10px;
+  max-width: 100%;
+  font-size: 18px;
+  display: block;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  justify-self: center;
+  color: black;
+}
+.aboutme-button {
+  font-family: "Digital Numbers";
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: 10px;
+  max-width: 100%;
+  display: block;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  color: black;
+}
+
+.email-button {
+  max-height: 100%;
+  max-width: 100%;
+  /* margin-top: 15px; */
+  margin-right: 10px;
+  display: block;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.linkedin-button {
+  /* margin-top: 15px; */
+  margin-right: 10px;
+  max-height: 100%;
+  max-width: 100%;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  display: block;
+}
+
+.resume-button {
+  /* margin-top: 15px; */
+  /* margin-right: 5px; */
+  max-height: 100%;
+  max-width: 100%;
+  /* width: 5vh; */
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  display: block;
+  /* justify-self: center; */
+}
+
+.linkedin-image,
+.resume-image,
+.email-image {
+  height: 75%;
+  width: 75%;
+}
+
+.thanks-text {
+  font-family: "Digital Numbers";
+  font-size: 12px;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .home-button,
+  .aboutme-button,
+  .email-button,
+  .linkedin-button,
+  .resume-button {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  .linkedin-image,
+  .resume-image,
+  .email-image {
+    height: 60%;
+    width: 60%;
+  }
+
+  .website-top-header,
+  .website-bottom-header {
+    padding-top: 5px;
+    padding-bottom: 12px;
+  }
+
+  .thanks-text {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+}
