@@ -1,64 +1,15 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Doxygen GitHub Pages Deploy Action
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches:
+      - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "14"
-
-      - name: Install dependencies
-        run: npm install
-        working-directory: ./client
-
-      - name: Build project
-        run: npm run build
-        working-directory: ./client
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          path: ./client/dist
-
   deploy:
     runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Download artifact
-        uses: actions/download-artifact@v3
+      - uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
         with:
-          name: build
-          path: ./build
-
-      - name: List files in build directory
-        run: ls -alh ./build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          folder: client
