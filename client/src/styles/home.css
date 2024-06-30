@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("/src/assets/fonts/OpenSans-Light.ttf") format("truetype");
+  /* font-style: light; */
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("/src/assets/fonts/OpenSans-Regular.ttf") format("truetype");
+  /* font-style: light; */
+}
+
+.bold-sans {
+  font-weight: bold;
+}
+
+.hello-text {
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 50;
+  max-width: 1000px;
+  padding: 50px;
+  margin: auto;
+  margin-top: 30px;
+
+  /* padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
+  padding-bottom: 50px; */
+
+  /* overflow: hidden;
+  border-right: 0.15em solid #000000;
+  animation: typing 3s steps(55, end), blink-caret 1s step-end infinite; */
+}
+
+/* .home-text {
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 50;
+  padding-left: 80px;
+  padding-right: 80px;
+} */
+
+.home-page {
+  position: block;
+  /* overflow-x: hidden; */
+  margin-top: 100px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.square-button,
+.square-portfolio-button,
+.diamond-button {
+  background-color: transparent;
+  border: 0;
+  font-family: "Digital Numbers";
+  margin: 5px;
+  cursor: pointer;
+}
+
+.rectangle-button {
+  background-color: transparent;
+  border: 0;
+  font-family: "Digital Numbers";
+  /* margin-left: 100px; */
+  cursor: pointer;
+  margin: 5px;
+  size: 50%;
+}
+
+.rectangle-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the buttons */
+  gap: 0px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black; /* Text color */
+}
+
+.square-text,
+.diamond-text {
+  font-size: 20px;
+}
+
+.square-text2 {
+  font-size: 17px;
+}
+
+.square-image,
+.diamond-image {
+  height: 150px;
+  position: relative;
+  width: auto;
+}
+
+.square-button:hover .square-image {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+.square-portfolio-button:hover .square-image {
+  opacity: 0.8;
+}
+
+.diamond-button:hover .diamond-image {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.rectangle-button:hover .rectangle-image {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.rectangle-image {
+  height: 40px;
+  width: auto;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 54vw;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #502a13;
+  }
+}
+
+.purple-bg {
+  background-color: #bca7d7;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.square-portfolio-button {
+  animation: float 3s ease-in-out infinite;
+}
