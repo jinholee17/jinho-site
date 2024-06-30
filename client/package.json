@@ -1,10 +1,15 @@
 {
-  "name": "jinho-site",
+  "name": "maps-gearup",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "start": "vite",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
     "@types/node": "^16.11.36",
