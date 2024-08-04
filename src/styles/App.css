@@ -1,11 +1,4 @@
 @font-face {
-  font-family: "Noto Sans";
-  src: url("/src/styles/fonts/NotoSansJP-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Digital Numbers";
   src: url("/src/assets/fonts/DigitalNumbers-Regular.ttf") format("truetype");
   font-weight: bold;
