@@ -16,8 +16,7 @@
     "noEmit": false,
     "jsx": "react-jsx",
     "outDir": "./dist",
-    "rootDir": "./client/src"
+    "rootDir": "./src"
   },
-  "include": ["client/src/**/*"],
-  "exclude": ["client/src/backend"]
+  "include": ["src/**/*"]
 }
