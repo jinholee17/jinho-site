@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Popup from "reactjs-popup";
 
 enum Section {
   HOME = "HOME",
