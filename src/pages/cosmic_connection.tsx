@@ -19,7 +19,7 @@ export default function CosmicConnection(props: pageProps) {
       const targetOffset = targetDiv.offsetTop - 40;
       window.scrollTo({
         top: targetOffset,
-        behavior: "instant",
+        behavior: "auto",
       });
     } else {
       console.error("Could not find target div");

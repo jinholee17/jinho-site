@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Popup from "reactjs-popup";
 import Portfolio from "./portfolio";
 
 enum Section {
@@ -41,7 +40,7 @@ export default function Home(props: pageProps) {
     const targetDiv = document.getElementById("lighter-purple-bg");
 
     if (targetDiv != null) {
-      targetDiv.scrollIntoView({ behavior: "smooth" });
+      targetDiv.scrollIntoView({ behavior: "auto" });
     } else {
       console.error("Could not find target div");
     }
@@ -55,7 +54,7 @@ export default function Home(props: pageProps) {
       const targetOffset = targetDiv.offsetTop - 50;
       window.scrollTo({
         top: targetOffset,
-        behavior: "instant",
+        behavior: "auto",
       });
     } else {
       console.error("Could not find target div");

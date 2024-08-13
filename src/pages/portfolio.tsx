@@ -22,7 +22,7 @@ export default function Portfolio(props: pageProps) {
       const targetOffset = targetDiv.offsetTop - 50;
       window.scrollTo({
         top: targetOffset,
-        behavior: "instant",
+        behavior: "auto",
       });
     } else {
       console.error("Could not find target div");
