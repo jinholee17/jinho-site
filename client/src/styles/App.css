@@ -57,6 +57,10 @@
   justify-self: center;
   color: black;
 }
+.aboutme-link {
+  margin-right: 10px;
+  margin-left: auto;
+}
 .aboutme-button {
   font-family: "Digital Numbers";
   margin-top: 15px;
@@ -155,4 +159,8 @@
     padding-top: 20px;
     padding-left: 5px;
   }
+}
+
+a {
+  text-decoration: none;
 }
