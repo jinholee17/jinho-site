@@ -1,7 +1,7 @@
-import { useState } from "react";
-import NavBar from "../components/NavBar/NavBar";
-import Home from "../components/Home/Home";
+import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
@@ -14,43 +14,25 @@ interface pageProps {
   setSection: React.Dispatch<React.SetStateAction<Section>>;
 }
 
-export default function Website() {
-  async function scrollToTop(props: Section) {
-    let targetDiv;
-    if (props == Section.ABOUTME) {
-      targetDiv = document.getElementById("back-home-button");
-    } else {
-      targetDiv = document.getElementById("hello-text");
-    }
-    if (targetDiv != null) {
-      const targetOffset = targetDiv.offsetTop - 50;
-      window.scrollTo({
-        top: targetOffset,
-        behavior: "instant",
-      });
-    } else {
-      console.error("Could not find target div");
-    }
-  }
-
+export default function NavBar() {
   return (
-    <div>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <NavBar></NavBar>
-      <Home></Home>
-      <header className="website-bottom-header">
-        <p className="thanks-text">thanks for stopping by!</p>
-        <Link to="/about" className="aboutme-link">
+    <React.Fragment>
+      <header className="website-top-header">
+        <Link to="/">
           <button
-            className="aboutme-button"
-            aria-label="aboutme button"
-            onClick={() => {
-              scrollToTop(Section.ABOUTME);
-            }}
+            className="home-button"
+            id="home-button"
+            aria-label="Home Button"
           >
+            Jinho Lee
+          </button>
+        </Link>
+        <Link to="/about" className="aboutme-link">
+          <button className="aboutme-button" aria-label="aboutme button">
             about me
           </button>
         </Link>
+
         <button
           className="email-button"
           aria-label="email button"
@@ -83,6 +65,6 @@ export default function Website() {
           <img className="resume-image" src="/static/images/resume.png" />
         </button>
       </header>
-    </div>
+    </React.Fragment>
   );
 }
