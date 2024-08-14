@@ -67,7 +67,7 @@ export default function Home() {
         </h1>
         <div className="buttons">
           <button
-            className="square-button"
+            className="square-facereveal-button"
             aria-label="square button"
             onClick={() => changeImage()}
           >

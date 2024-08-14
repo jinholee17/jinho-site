@@ -55,7 +55,8 @@
 }
 .square-button,
 .square-portfolio-button,
-.diamond-button {
+.diamond-button,
+.square-facereveal-button {
   background-color: transparent;
   border: 0;
   font-family: "Digital Numbers";
@@ -107,10 +108,26 @@
   height: 150px;
   position: relative;
   width: auto;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
 }
 
 .square-button:hover .square-image {
   opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.square-portfolio-button {
+  transition: transform 0.5s ease;
+}
+
+.square-facereveal-button:hover {
+  animation: spin 8s linear infinite;
+}
+.square-portfolio-button {
+  transition: transform 0.5s ease;
+}
+.square-portfolio-button {
+  animation: float 5s ease-in-out infinite;
 }
 .square-portfolio-button:hover .square-image {
   opacity: 0.8;
@@ -166,6 +183,11 @@
   }
 }
 
-.square-portfolio-button {
-  animation: float 3s ease-in-out infinite;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
