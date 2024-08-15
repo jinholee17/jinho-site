@@ -1,7 +1,5 @@
-import NavBar from "../NavBar/NavBar";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import BottomNavBar from "../NavBar/BottomNavBar";
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
@@ -21,7 +19,6 @@ export default function Cosmic() {
 
   return (
     <div className="cosmic-page">
-      <NavBar></NavBar>
       <Link to="/" className="back-home-link">
         <button
           className="back-home-button"
@@ -95,7 +92,6 @@ export default function Cosmic() {
           </div>
         </button>
       </div>
-      <BottomNavBar></BottomNavBar>
     </div>
   );
 }

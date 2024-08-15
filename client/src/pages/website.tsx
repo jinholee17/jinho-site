@@ -37,9 +37,7 @@ export default function Website() {
   return (
     <div>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <NavBar></NavBar>
       <Home></Home>
-      <BottomNavBar></BottomNavBar>
     </div>
   );
 }
