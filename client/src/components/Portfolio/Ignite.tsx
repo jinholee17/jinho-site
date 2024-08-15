@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import NavBar from "../NavBar/NavBar";
-import BottomNavBar from "../NavBar/BottomNavBar";
+
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
@@ -21,7 +20,6 @@ export default function Ignite() {
 
   return (
     <div className="ignite-page">
-      <NavBar></NavBar>
       <Link to="/" className="back-home-link">
         <button
           className="back-home-button"
@@ -79,7 +77,6 @@ export default function Ignite() {
           <p className="ignite-team-text">My team at Sophia Academy!</p>
         </div>
       </div>
-      <BottomNavBar></BottomNavBar>
     </div>
   );
 }

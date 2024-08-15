@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
-import BottomNavBar from "../NavBar/BottomNavBar";
+
 interface pageProps {
   setSection: React.Dispatch<React.SetStateAction<Section>>;
 }
@@ -20,7 +20,6 @@ export default function AboutMe() {
   }, []);
   return (
     <React.Fragment>
-      <NavBar></NavBar>
       <div className="aboutme-page">
         <div className="aboutme-page-top">
           {/* <Link to="/" className="back-home-link">
@@ -109,7 +108,6 @@ export default function AboutMe() {
           <img className="eclipse-image" src="/static/images/eclipse.jpg"></img>
         </div>
       </div>
-      <BottomNavBar></BottomNavBar>
     </React.Fragment>
   );
 }
