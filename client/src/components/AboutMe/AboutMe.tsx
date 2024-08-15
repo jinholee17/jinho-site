@@ -40,12 +40,7 @@ export default function AboutMe() {
             <p className="aboutme-paragraph">
               I’m a junior at Brown University where I am immersed in computer
               science, literary arts, theatre, and community organizing. Outside
-              of classes, I'm the vice president of AI Robotics Ethics society,
-              program organizer for the IgniteCS chapter at Sophia Academy, and
-              a teaching assistant for CS 150: Object-Oriented Programming!
-            </p>
-            <p className="aboutme-paragraph">
-              I'm also a web developer for{" "}
+              of classes, I'm a web developer for{" "}
               <a
                 href="https://www.theindy.org/"
                 target="_blank"
@@ -64,6 +59,11 @@ export default function AboutMe() {
               at Brown!
             </p>
             <p className="aboutme-paragraph">
+              I'm also the vice president of AI Robotics Ethics society, program
+              organizer for the IgniteCS chapter at Sophia Academy, and a
+              teaching assistant for CS 150: Object-Oriented Programming!
+            </p>
+            <p className="aboutme-paragraph">
               I enjoy running (currently training for the Providence half
               marathon), making lattes, updating my GoodReads profile, and
               watching live theatre.
@@ -80,6 +80,7 @@ export default function AboutMe() {
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
+              className="spotify-playlist"
             ></iframe>
           </div>
         </div>

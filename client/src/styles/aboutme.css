@@ -29,6 +29,7 @@
 .aboutme-text {
   font-family: "Open Sans";
   border-radius: 30px;
+  font-size: 20px;
   background-color: white;
   max-width: 800px;
   padding: 40px;
@@ -61,6 +62,12 @@
   max-height: 10vh;
 }
 
+.spotify-playlist {
+  padding-top: 20px;
+  height: 352px;
+  max-height: 352px;
+}
+
 .aboutme-pics {
   display: flex;
   flex-wrap: wrap;
@@ -70,19 +77,6 @@
   margin: auto;
   gap: 20px;
 }
-
-/* .gates-image,
-.colorado-image,
-.colorado-smiling-image,
-.andy-image,
-.sunflower-image {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 40px;
-  margin: auto;
-} */
 
 .gates-image {
   /* margin-top: 15px; */
