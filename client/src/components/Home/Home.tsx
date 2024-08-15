@@ -5,7 +5,7 @@ import Portfolio from "../Portfolio/Portfolio";
 
 export default function Home() {
   const imagePath1 = "/static/images/square.png";
-  const imagePath2 = "/static/images/face-reveal.png";
+  const imagePath2 = "/static/images/face-reveal-mbta.png";
   let currentImagePath = imagePath1;
 
   useEffect(() => {
@@ -60,10 +60,10 @@ export default function Home() {
           className="hello-text"
           id="hello-text"
         >
-          Hi! I’m <span className="bold-sans">Jinho</span>! I’m a full-stack
-          developer studying computer science and literary arts at Brown
-          University. I'm interested in the intersections of CS and language, as
-          well as creating accessible computer science education.
+          Hi! I’m <span className="bold-sans">Jinho</span>! I’m an aspiring
+          full-stack developer at Brown University. <br></br>I'm interested in
+          the intersections of CS and language, as well as creating accessible
+          computer science education.
         </h1>
         <div className="buttons">
           <button
