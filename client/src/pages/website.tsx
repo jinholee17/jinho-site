@@ -2,6 +2,7 @@ import { useState } from "react";
 import NavBar from "../components/NavBar/NavBar";
 import Home from "../components/Home/Home";
 import { Link } from "react-router-dom";
+import BottomNavBar from "../components/NavBar/BottomNavBar";
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
@@ -38,51 +39,7 @@ export default function Website() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <NavBar></NavBar>
       <Home></Home>
-      <header className="website-bottom-header">
-        <p className="thanks-text">thanks for stopping by!</p>
-        <Link to="/about" className="aboutme-link">
-          <button
-            className="aboutme-button"
-            aria-label="aboutme button"
-            onClick={() => {
-              scrollToTop(Section.ABOUTME);
-            }}
-          >
-            about me
-          </button>
-        </Link>
-        <button
-          className="email-button"
-          aria-label="email button"
-          onClick={() => window.open("mailto:jinho_lee@brown.edu", "_blank")}
-        >
-          <img className="email-image" src="/static/images/email.png" />
-        </button>
-        <button
-          className="linkedin-button"
-          aria-label="linkedin button"
-          onClick={() =>
-            window.open(
-              "https://www.linkedin.com/in/jinho-lee-23a30b217/",
-              "_blank"
-            )
-          }
-        >
-          <img className="linkedin-image" src="/static/images/linkedin.png" />
-        </button>
-        <button
-          className="resume-button"
-          aria-label="resume button"
-          onClick={() =>
-            window.open(
-              "https://docs.google.com/document/d/16JF5fy8F_anR5J0NW3DCHFrc5VUXDOtn/edit?usp=sharing&ouid=104602903123943446095&rtpof=true&sd=true",
-              "_blank"
-            )
-          }
-        >
-          <img className="resume-image" src="/static/images/resume.png" />
-        </button>
-      </header>
+      <BottomNavBar></BottomNavBar>
     </div>
   );
 }
