@@ -36,7 +36,7 @@ export default function Portfolio() {
           My featured works!
         </h1>
         <div className="project">
-          <Link to="/lockin">
+          <Link className="portfolio-link" to="/lockin">
             <button className="square-button" aria-label="square button">
               <div className="image-container">
                 <img
@@ -67,7 +67,7 @@ export default function Portfolio() {
           </Link>
         </div>
         <div className="project">
-          <Link to="/ignitecs">
+          <Link className="portfolio-link" to="/ignitecs">
             <button className="square-button" aria-label="square button">
               <div className="image-container">
                 <img
@@ -95,7 +95,7 @@ export default function Portfolio() {
           </Link>
         </div>
         <div className="project">
-          <Link to="/cosmic">
+          <Link className="portfolio-link" to="/cosmic">
             <button className="square-button" aria-label="square button">
               <div className="image-container">
                 <img

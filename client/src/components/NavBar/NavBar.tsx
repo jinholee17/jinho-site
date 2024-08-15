@@ -54,13 +54,8 @@ export default function NavBar() {
         </button>
         <button
           className="resume-button"
-          aria-label="resume button"
-          onClick={() =>
-            window.open(
-              "https://docs.google.com/document/d/16JF5fy8F_anR5J0NW3DCHFrc5VUXDOtn/edit?usp=sharing&ouid=104602903123943446095&rtpof=true&sd=true",
-              "_blank"
-            )
-          }
+          aria-label="github button"
+          onClick={() => window.open("https://github.com/jinholee17/")}
         >
           <img className="resume-image" src="/static/images/resume.png" />
         </button>
