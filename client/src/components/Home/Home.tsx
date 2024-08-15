@@ -129,12 +129,7 @@ export default function Home() {
             <button
               className="rectangle-button"
               aria-label="rectangle button"
-              onClick={() =>
-                window.open(
-                  "https://docs.google.com/document/d/16JF5fy8F_anR5J0NW3DCHFrc5VUXDOtn/edit?usp=sharing&ouid=104602903123943446095&rtpof=true&sd=true",
-                  "_blank"
-                )
-              }
+              onClick={() => window.open("https://github.com/jinholee17/")}
             >
               <div className="image-container">
                 <img
@@ -144,7 +139,7 @@ export default function Home() {
                 />
                 <div className="text-overlay">
                   <p className="square-text" id="square-text">
-                    resume
+                    github
                   </p>
                 </div>
               </div>
