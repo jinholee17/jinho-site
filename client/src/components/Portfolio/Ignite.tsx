@@ -21,7 +21,7 @@ export default function Ignite() {
   return (
     <div className="ignite-page">
       <NavBar></NavBar>
-      <Link to="/">
+      <Link to="/" className="back-home-link">
         <button
           className="back-home-button"
           id="back-home-button"

@@ -21,8 +21,9 @@
 .aboutme-title {
   font-family: "Digital Numbers";
   font-size: 20px;
-  padding-top: 25px;
+  padding-top: 5px;
   margin-top: 0px;
+  margin-bottom: auto;
 }
 
 .aboutme-text {
@@ -30,25 +31,34 @@
   border-radius: 30px;
   background-color: white;
   max-width: 800px;
-  padding: 20px;
+  padding: 40px;
   margin: auto;
+  margin-top: 80px;
   color: black;
 }
 
 .back-home-button {
   font-family: "Digital Numbers";
-  margin-top: 50px;
-  margin-bottom: 25px;
-  margin-left: 100px;
+
   color: black;
 
   height: 10vh;
-  width: 40vh;
-  max-width: 40vh;
+  width: 30vh;
+  max-width: 30vh;
   font-size: 15px;
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+.back-home-link {
+  width: 30vh;
+  max-width: 30vh;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  height: 10vh;
+  max-height: 10vh;
 }
 
 .aboutme-pics {
@@ -75,30 +85,52 @@
 } */
 
 .gates-image {
+  /* margin-top: 15px; */
   border-radius: 40px;
   max-height: 300px;
 }
 
 .colorado-image {
   border-radius: 40px;
-
   max-height: 500px;
 }
 .colorado-smiling-image {
   margin-top: 80px;
   border-radius: 100px;
   height: 300px;
+  margin-left: 100px;
 }
 
-.andy-image {
-  margin-top: 100px;
+.cat-image {
+  margin-top: 0px;
   border-radius: 40px;
-
-  height: 300px;
+  margin-top: 80px;
+  margin-left: 50px;
+  height: 350px;
 }
 .sunflower-image {
   margin-top: 80px;
+  margin-left: 50px;
+  margin-right: auto;
   border-radius: 40px;
-
   height: 400px;
+}
+
+.idtech-image {
+  margin-top: 0px;
+  border-radius: 40px;
+  margin-left: 50px;
+  height: 250px;
+}
+.andy-image {
+  margin-top: 100px;
+  border-radius: 40px;
+  margin-left: 40px;
+  height: 400px;
+}
+.eclipse-image {
+  margin-top: 20px;
+  border-radius: 40px;
+  margin-left: 50px;
+  height: 300px;
 }
