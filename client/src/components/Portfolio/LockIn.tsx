@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
+import BottomNavBar from "../NavBar/BottomNavBar";
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
@@ -85,6 +86,7 @@ export default function LockIn() {
           </div>
         </div>
       </button>
+      <BottomNavBar></BottomNavBar>
     </div>
   );
 }
