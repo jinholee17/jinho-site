@@ -40,23 +40,22 @@ export default function AboutMe() {
             <p className="aboutme-paragraph">
               I’m a junior at Brown University where I am immersed in computer
               science, literary arts, theatre, and community organizing. Outside
-              of classes, I'm a web developer for{" "}
+              of classes, I'm a mobile app developer for{" "}
               <a
-                href="https://www.theindy.org/"
+                href="https://www.browndailyherald.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                The College Hill Independent
+                The Brown Daily Herald
               </a>
-              , and a mobile app engineer for the{" "}
+              , which you can check out our app {" "}
               <a
-                href="https://act.usc.edu/"
+                href="https://apps.apple.com/us/app/the-brown-daily-herald/id6642661925"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ACT Lab
+                here!
               </a>{" "}
-              at Brown!
             </p>
             <p className="aboutme-paragraph">
               I'm also the vice president of AI Robotics Ethics society, program
@@ -107,6 +106,7 @@ export default function AboutMe() {
           <img className="idtech-image" src="/static/images/idtech.png"></img>
           <img className="andy-image" src="/static/images/andyhouse.jpg"></img>
           <img className="eclipse-image" src="/static/images/eclipse.jpg"></img>
+          <img className="eclipse-image" src="/static/images/andy_humors.jpg"></img>
         </div>
       </div>
     </React.Fragment>

@@ -79,7 +79,7 @@
 .email-button {
   max-height: 100%;
   max-width: 100%;
-  /* margin-top: 15px; */
+  margin-top: 7px;
   margin-right: 10px;
   display: block;
   font-size: 24px;
@@ -126,8 +126,10 @@
 .thanks-text {
   font-family: "Digital Numbers";
   font-size: 12px;
-  padding-top: 30px;
+  padding-top:12px;
   padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -140,6 +142,8 @@
     margin-top: 10px;
     margin-right: 5px;
   }
+
+
 
   .linkedin-image,
   .resume-image,
