@@ -18,23 +18,6 @@ export default function Graphics() {
     }
   };
 
-  const [currentTime, setCurrentTime] = useState(0); // Video current time
-  const [duration, setDuration] = useState(0); // Video duration
-
-  const handleTimeUpdate = () => {
-    if (videoRef.current) {
-      setCurrentTime(videoRef.current.currentTime);
-    }
-  };
-
-  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newTime = Number(e.target.value);
-    setCurrentTime(newTime);
-    if (videoRef.current) {
-      videoRef.current.currentTime = newTime;
-    }
-  };
-
   const formatTime = (time: number) => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -56,16 +39,15 @@ export default function Graphics() {
         <h1 className="cosmic-title">Up Simulation</h1>
         <p className="bold-cosmic">Graphics Course Term Project:</p>
         <p className="cosmic-text">
-          An OpenGL realtime application, built using C++! Simulates the flying house 
-          from the movie Up (2013)!
+          An OpenGL realtime application, built using C++. Simulates the flying house 
+          from the movie Up (2009)!
         </p>
         <div className="lockin-video-div" onClick={handleVideoClick} >
-          <video className="graphics-video" autoPlay loop ref={videoRef} onTimeUpdate={handleTimeUpdate}
+          <video className="graphics-video" autoPlay loop ref={videoRef}
           >
             <source src="/static/videos/graphics-video2.mp4" type="video/mp4" />
           </video>
         </div>
-        {/* <img className="cosmic-image2" src="/src/assets/images/lockedin.png" /> */}
         <p className="cosmic-text">
           Throughout the semester, we created both raytracers and real-time OpenGL graphics applications.
           In this cumulative final project, we were given the freedom to expand upon those projects.
@@ -83,32 +65,17 @@ export default function Graphics() {
         <p className="cosmic-text">
           Watch the full demo here!
         </p>
-        <div className="lockin-video-div" onClick={handleVideoClick}>
-          <video className="graphics-video" loop ref={videoRef}>
-            <source src="/static/videos/graphics_final_demo.mp4" type="video/mp4" />
-          </video>
-          <div className="video-controls">
-            <span className="current-time">{formatTime(currentTime)}</span>
-            <span className="divider"> / </span>
-            <span className="total-time">{formatTime(180)}</span>
-          </div>
-          <input
-            type="range"
-            className="video-slider"
-            min="0"
-            max="180"
-            value={currentTime}
-            onChange={handleSliderChange}
-            step="0.1"
-          />
+        <div className="graphics-video-div" >
+          <iframe className="graphics-video2" src="https://drive.google.com/file/d/1Lk-QV7-OH6Kfgw3Yeii02vOwi74cvJ48/preview"
+              allowFullScreen/>
         </div>
       </div>
       <button
         className="lockin-square-button"
         aria-label="square button"
-        onClick={() =>
-          window.open("https://github.com/jinholee17/lockin-at-brown", "_blank")
-        }
+        // onClick={() =>
+        //   window.open("https://github.com/jinholee17/lockin-at-brown", "_blank")
+        // }
       >
         <div className="image-container">
           <img
@@ -118,7 +85,7 @@ export default function Graphics() {
           />
           <div className="text-overlay">
             <p className="lockin-square-text" id="square-text">
-              Check out the github repo here!
+              Generate balloons! (Coming soon)
             </p>
           </div>
         </div>

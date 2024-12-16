@@ -72,7 +72,7 @@
 }
 
 .up-page {
-  background-color: hsla(256, 100%, 76%, 0.712);
+  background-color:#e5f4f9;
   padding-bottom: 100px;
   position: block;
   /* overflow-x: hidden; */
@@ -140,15 +140,27 @@
   margin-bottom: 20px;
 }
 
+.graphics-video-div {
+  margin: auto;
+  /* width: 600px; */
+  max-width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .lockin-video {
   /* width: 600px; */
   /* max-width: 600px; */
   width: 100%;
 }
 
+.graphics-video2 {
+  width: 100%;
+
+}
+
 .graphics-video {
-  /* width: 600px; */
-  /* max-width: 600px; */
   width: 100%;
   border-radius:40px;
 
