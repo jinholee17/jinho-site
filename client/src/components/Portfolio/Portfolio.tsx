@@ -36,6 +36,36 @@ export default function Portfolio() {
           My featured works!
         </h1>
         <div className="project">
+          <Link className="portfolio-link" to="/up">
+            <button className="square-button" aria-label="square button">
+              <div className="image-container">
+                <img
+                  className="square-image"
+                  src="/static/images/gray-square.png"
+                  id="square-image"
+                />
+                <div className="text-overlay">
+                  <p className="square-text" id="square-text">
+                    up simulation
+                  </p>
+                </div>
+              </div>
+            </button>
+          </Link>
+          <Link to="/up">
+            <button
+              className="project-button"
+              aria-label="lock in at brown button"
+            >
+              <div className="image-container">
+              <video className="projects-video" autoPlay loop>
+                <source src="/static/videos/graphics-video.mp4" type="video/mp4" />
+              </video>
+              </div>
+            </button>
+          </Link>
+        </div>
+        <div className="project">
           <Link className="portfolio-link" to="/lockin">
             <button className="square-button" aria-label="square button">
               <div className="image-container">

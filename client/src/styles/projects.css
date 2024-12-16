@@ -71,6 +71,17 @@
   max-width: 100%;
 }
 
+.up-page {
+  background-color: hsla(256, 100%, 76%, 0.712);
+  padding-bottom: 100px;
+  position: block;
+  /* overflow-x: hidden; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+}
+
 .lockin-page {
   background-color: #ffcfa873;
   padding-bottom: 100px;
@@ -133,6 +144,20 @@
   /* width: 600px; */
   /* max-width: 600px; */
   width: 100%;
+}
+
+.graphics-video {
+  /* width: 600px; */
+  /* max-width: 600px; */
+  width: 100%;
+  border-radius:40px;
+
+}
+
+.graphics-video:hover {
+  cursor: pointer;
+  opacity: 0.7; 
+
 }
 
 .ignite-bottom {

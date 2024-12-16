@@ -16,6 +16,7 @@ import "./styles/projects.css";
 import { useState } from "react";
 import BottomNavBar from "./components/NavBar/BottomNavBar";
 import NavBar from "./components/NavBar/NavBar";
+import Graphics from "./components/Portfolio/Graphics";
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
@@ -38,6 +39,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <Route path="/cosmic" element={<Cosmic />}></Route>
             <Route path="/lockin" element={<LockIn />}></Route>
             <Route path="/ignitecs" element={<Ignite />}></Route>
+            <Route path="/up" element={<Graphics />}></Route>
           </Routes>
           <BottomNavBar></BottomNavBar>
         </div>

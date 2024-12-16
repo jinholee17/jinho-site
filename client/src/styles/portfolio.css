@@ -55,12 +55,24 @@
   width: auto;
 }
 
+.projects-video {
+  border-radius: 40px;
+  height: 300px;
+  position: relative;
+  width: auto;
+}
+
 .project-button {
   background-color: transparent;
   border-color: transparent;
 }
 
 .project-button:hover .project-image {
+  cursor: pointer;
+  opacity: 0.7; /* Reduce opacity on hover */
+}
+
+.project-button:hover .projects-video {
   cursor: pointer;
   opacity: 0.7; /* Reduce opacity on hover */
 }
