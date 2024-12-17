@@ -58,10 +58,10 @@ export default function Portfolio() {
               aria-label="lock in at brown button"
             >
               <div className="image-container">
-              <video className="projects-video" autoPlay loop muted preload="auto">
-                <source src="/static/videos/graphics-video.mp4" type="video/mp4" />
-              </video>
-              <div className="hide-text" id='overlay'>A realtime graphics simulation of Pixar's Up</div>
+                <video className="projects-video" autoPlay loop muted preload="auto">
+                  <source src="/static/videos/graphics-video.mp4" type="video/mp4" />
+                </video>
+                <div className="hide-text" id='overlay'>A realtime graphics simulation of Pixar's Up</div>
               </div>
             </button>
           </Link>
@@ -93,6 +93,7 @@ export default function Portfolio() {
                   className="project-image"
                   src="/static/images/lockedin.png"
                 />
+                <div className="hide-text" id='overlay'>A Providence study-spot recommender</div>
               </div>
             </button>
           </Link>
@@ -121,6 +122,7 @@ export default function Portfolio() {
                   className="project-image"
                   src="/static/images/ignitecs.png"
                 />
+                <div className="hide-text" id='overlay'>Program Bringing CS education to Providence Schools</div>
               </div>
             </button>
           </Link>
@@ -154,6 +156,7 @@ export default function Portfolio() {
                     className="project-image"
                     src="/static/images/cosmic.png"
                   />
+                  <div className="hide-text" id='overlay'>An astrological compatibility calculator</div>
                 </div>
               </button>
             </Link>
