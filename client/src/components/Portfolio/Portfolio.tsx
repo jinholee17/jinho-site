@@ -58,7 +58,7 @@ export default function Portfolio() {
               aria-label="lock in at brown button"
             >
               <div className="image-container">
-              <video className="projects-video" autoPlay loop>
+              <video className="projects-video" autoPlay loop muted preload="auto">
                 <source src="/static/videos/graphics-video.mp4" type="video/mp4" />
               </video>
               </div>
