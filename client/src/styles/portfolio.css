@@ -1,3 +1,15 @@
+#overlay {
+  position: absolute;
+  z-index:100;
+  text-align: center;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, 20%); 
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size:20px;
+}
+
 .lighter-purple-bg {
   background-color: white;
   /* background-color: #f5f5f5; */
@@ -62,6 +74,25 @@
   width: auto;
 }
 
+.hide-text {
+  display: none;
+}
+
+.hide-text:hover{
+  display: block;
+  color: black;
+}
+
+.projects-video:hover + .hide-text {
+  display: block;
+  color: black;
+}
+
+.hide-text:hover{
+  opacity: 0.7;
+  cursor:pointer
+}
+
 .project-button {
   background-color: transparent;
   border-color: transparent;
@@ -76,3 +107,4 @@
   cursor: pointer;
   opacity: 0.7; /* Reduce opacity on hover */
 }
+

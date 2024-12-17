@@ -40,6 +40,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <Route path="/lockin" element={<LockIn />}></Route>
             <Route path="/ignitecs" element={<Ignite />}></Route>
             <Route path="/up" element={<Graphics />}></Route>
+            <Route path="/asl" element={<Graphics />}></Route>
           </Routes>
           <BottomNavBar></BottomNavBar>
         </div>

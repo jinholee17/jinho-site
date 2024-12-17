@@ -61,6 +61,7 @@ export default function Portfolio() {
               <video className="projects-video" autoPlay loop muted preload="auto">
                 <source src="/static/videos/graphics-video.mp4" type="video/mp4" />
               </video>
+              <div className="hide-text" id='overlay'>A realtime graphics simulation of Pixar's Up</div>
               </div>
             </button>
           </Link>
