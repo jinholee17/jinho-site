@@ -22,45 +22,15 @@ export default function AboutMe() {
     <React.Fragment>
       <div className="aboutme-page">
         <div className="aboutme-page-top">
-          {/* <Link to="/" className="back-home-link">
-            <button
-              className="back-home-button"
-              id="back-home-button"
-              aria-label="Home Button"
-            >
-              -Back to home
-            </button>
-          </Link> */}
-          <div className="aboutme-text">
+          <div className="aboutme-text-big">
             <h1 className="aboutme-title">About me</h1>
             <p className="aboutme-paragraph">
-              Hello, I'm Jinho (he/him)! I grew up in the Port neighborhood in
+              Hello, I'm Jinho! I grew up in the Port neighborhood in
               Cambridge, and currently reside in Providence.
             </p>
             <p className="aboutme-paragraph">
               I’m a junior at Brown University where I am immersed in computer
-              science, literary arts, theatre, and community organizing. Outside
-              of classes, I'm a mobile app developer for{" "}
-              <a
-                href="https://www.browndailyherald.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The Brown Daily Herald
-              </a>
-              , which you can check out our app {" "}
-              <a
-                href="https://apps.apple.com/us/app/the-brown-daily-herald/id6642661925"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                here!
-              </a>{" "}
-            </p>
-            <p className="aboutme-paragraph">
-              I'm also the vice president of AI Robotics Ethics society, program
-              organizer for the IgniteCS chapter at Sophia Academy, and a
-              teaching assistant for CS 150: Object-Oriented Programming!
+              science, literary arts, theatre, and community organizing.
             </p>
             <p className="aboutme-paragraph">
               I enjoy running (currently training for the Providence half
@@ -74,14 +44,56 @@ export default function AboutMe() {
             </p>
             <iframe
               src="https://open.spotify.com/embed/playlist/6tS9viY0xw6ccuppOcB2bX?utm_source=generator"
-              width="70%"
-              height="175"
+              // width="100%"
+              // height="175"
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
               className="spotify-playlist"
             ></iframe>
           </div>
+          <div className="aboutme-stack">
+          <img className="newport-image" src="/static/images/newport.jpg"></img>
+            <div className="aboutme-text-small">
+              <p className="aboutme-paragraph">
+                Outside of classes, I'm a mobile app developer for{" "}
+                <a
+                  href="https://www.browndailyherald.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Brown Daily Herald
+                </a>
+                , which you can check out our app {" "}
+                <a
+                  href="https://apps.apple.com/us/app/the-brown-daily-herald/id6642661925"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  here!
+                </a>{" "}
+              </p>
+            </div>
+            <div className="aboutme-text-small">
+              <p className="aboutme-paragraph">
+                I used to perform and produce theatre, but now I just{" "}
+                <a
+                  href="https://www.browndailyherald.com/article/2024/12/outlandish-skits-bring-flair-to-one-of-browns-largest-cs-courses"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  write + perform skits for the class I TA for 😱
+                </a>
+              </p>
+            </div>
+            <div className="aboutme-text-small">
+                <p className="aboutme-paragraph">
+                  I'm also the vice president of AI Robotics Ethics society and program
+                  organizer for the IgniteCS chapter at Sophia Academy! I'd love to chat 
+                  about anything regarding the applications of CS in education and policy!
+                </p>
+              </div>
+            </div>
         </div>
         <div className="aboutme-pics">
           <img className="gates-image" src="/static/images/gates.jpg"></img>
