@@ -25,7 +25,7 @@ export default function ASL() {
   };
 
   return (
-    <div className="up-page">
+    <div className="asl-page">
       <Link to="/" className="back-home-link">
         <button
           className="back-home-button"
@@ -36,46 +36,65 @@ export default function ASL() {
         </button>
       </Link>
       <div className="project-text-box">
-        <h1 className="cosmic-title">Up Simulation</h1>
-        <p className="bold-cosmic">Graphics Course Term Project (Fall 2024):</p>
+        <h1 className="cosmic-title">American Sign Language Interpreter</h1>
+        <p className="bold-cosmic">Computer Vision Course Term Project (Fall 2024):</p>
         <p className="cosmic-text">
-          An OpenGL realtime application, built using C++. Simulates the flying house 
-          from the movie Up (2009)!
+          We wanted to create an ASL interpreter that can take in
+          an image of a letter in ASL and identify which letter it is. We
+          wanted to figure out whether traditional CV algorithms or a
+          CNN would perform better at this task, so we implemented
+          both.
+        </p>
+        <img className="cosmic-image2" src="/static/images/asl.png" />
+        <p className="cosmic-text">
+          For our traditional CV approach, we used the bag of
+          words image classifier with an SVM classifier.
+          For our CNN approach, we used two different strategies.
+          One was a fully built traditional convolutional neural network with
+          linear convolutional and max pooling layers. The
+          other model was our fine-tuned pretrained model which was
+          a version of the ResNet-18 model. ResNet-18 is a CNN
+          with 18 layers used for image classification for over 1,000
+          categories and trained on a large database. For our custom
+          version we froze all the layers except the last and then replaced
+          the final layer with a custom classifier for the specific
+          number of classes in the dataset.
+        </p>
+        <p className="cosmic-text">
+        Our training and testing data is entirely from a Kaggle
+        dataset called asl alphabet. It includes 3000 images per letter,
+        plus 3000 images for each of "space” and "nothing."
+        Because of space limitations, we only used 40 images per
+        character rather than the entire dataset.
+        </p>
+        <img className="asl-image" src="/static/images/asl_m.jpg" />
+        <img className="asl-image" src="/static/images/asl_l.jpg" />
+        <p className="cosmic-text">
+        Our final test accuracy using the SVM approach was
+        85.7%, meaning that on our test data, 85.7% of images of
+        ASL characters were classified correctly. For our custom
+        CNN model, after 50 epochs, our highest training accuracy was 100%.
+        </p>
+        <p className="cosmic-text">
+          Click to watch the full demo here!
         </p>
         <div className="lockin-video-div" onClick={handleVideoClick} >
-          <video className="graphics-video" autoPlay loop ref={videoRef}
+          <video className="asl-video" loop ref={videoRef}
           >
-            <source src="/static/videos/graphics-video2.mp4" type="video/mp4" />
+            <source src="/static/videos/asl.mp4" type="video/mp4" />
           </video>
         </div>
         <p className="cosmic-text">
-          Throughout the semester, we created both raytracers and real-time OpenGL graphics applications.
-          In this cumulative final project, we were given the freedom to expand upon those projects.
+        My collaborators were Natalie King, Sylvie Watts, and Domingo Viesca! Special thanks to Professor Sridhar as well.
+        Check out the Github repo by clicking the button below!
         </p>
-        <p className="cosmic-text">
-          Our real-time OpenGL program takes in JSON scenefiles, then parses them, and renders
-          them using a realtime graphics pipeline.
-        </p>
-        <p className="cosmic-text">
-          We implemented normal-mapping to achieve 3D textures, environment maps to create the seamless
-          + realsitic background, and a parser which can edit each individual balloon in order to move them.
-          I focused on implementing bezier curves, using 4 control points in order to mathematically
-          compute a smooth curve for the house and camera to travel on.
-        </p>
-        <p className="cosmic-text">
-          Watch the full demo here!
-        </p>
-        <div className="graphics-video-div" >
-          <iframe className="graphics-video2" src="https://drive.google.com/file/d/1Lk-QV7-OH6Kfgw3Yeii02vOwi74cvJ48/preview"
-              allowFullScreen/>
-        </div>
       </div>
       <button
         className="lockin-square-button"
         aria-label="square button"
-        // onClick={() =>
-        //   window.open("https://github.com/jinholee17/lockin-at-brown", "_blank")
-        // }
+        onClick={() =>
+          window.open("https://github.com/jinholee17/asl-interpreter", "_blank")
+        }
       >
         <div className="image-container">
           <img
@@ -85,7 +104,7 @@ export default function ASL() {
           />
           <div className="text-overlay">
             <p className="lockin-square-text" id="square-text">
-              Generate balloons! (Coming soon)
+              checkout the github repo here!
             </p>
           </div>
         </div>

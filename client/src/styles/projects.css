@@ -36,6 +36,14 @@
   background-color: transparent;
 }
 
+.asl-image {
+  max-width: 60%;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
 .bold-cosmic {
   font-weight: bold;
   font-family: "Open Sans";
@@ -67,6 +75,16 @@
   padding-bottom: 100px;
   position: block;
   /* overflow-x: hidden; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.asl-page {
+  background-color: #d0b2da;
+  padding-bottom: 100px;
+  position: block;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -139,6 +157,7 @@
   max-width: 70%;
   margin-top: 20px;
   justify-content: center;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 
@@ -168,7 +187,21 @@
 
 }
 
+
 .graphics-video:hover {
+  cursor: pointer;
+  opacity: 0.7; 
+
+}
+
+.asl-video {
+  width: 100%;
+  margin-top: -45px;
+  margin-bottom:-50px;
+}
+
+
+.asl-video:hover {
   cursor: pointer;
   opacity: 0.7; 
 

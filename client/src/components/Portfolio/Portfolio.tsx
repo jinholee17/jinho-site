@@ -36,6 +36,38 @@ export default function Portfolio() {
           My featured works!
         </h1>
         <div className="project">
+          <Link className="portfolio-link" to="/asl">
+            <button className="square-button" aria-label="square button">
+              <div className="image-container">
+                <img
+                  className="square-image"
+                  src="/static/images/gray-square.png"
+                  id="square-image"
+                />
+                <div className="text-overlay">
+                  <p className="square-text2" id="square-text">
+                    asl interpreter
+                  </p>
+                </div>
+              </div>
+            </button>
+          </Link>
+          <Link to="/asl">
+            <button
+              className="project-button"
+              aria-label="lock in at brown button"
+            >
+              <div className="image-container">
+                <img
+                  className="project-image"
+                  src="/static/images/asl_logo.png"
+                />
+                <div className="hide-text" id='overlay'>An American Sign Language translator using computer vision algorithms</div>
+              </div>
+            </button>
+          </Link>
+        </div>
+        <div className="project">
           <Link className="portfolio-link" to="/up">
             <button className="square-button" aria-label="square button">
               <div className="image-container">
@@ -45,7 +77,7 @@ export default function Portfolio() {
                   id="square-image"
                 />
                 <div className="text-overlay">
-                  <p className="square-text" id="square-text">
+                  <p className="square-text2" id="square-text">
                     up simulation
                   </p>
                 </div>
@@ -93,7 +125,7 @@ export default function Portfolio() {
                   className="project-image"
                   src="/static/images/lockedin.png"
                 />
-                <div className="hide-text" id='overlay'>A Providence study-spot recommender</div>
+                <div className="hide-text" id='overlay'>A study-spot recommender</div>
               </div>
             </button>
           </Link>

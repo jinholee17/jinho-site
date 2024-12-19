@@ -17,6 +17,7 @@ import { useState } from "react";
 import BottomNavBar from "./components/NavBar/BottomNavBar";
 import NavBar from "./components/NavBar/NavBar";
 import Graphics from "./components/Portfolio/Graphics";
+import ASL from "./components/Portfolio/ASL";
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
@@ -40,7 +41,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <Route path="/lockin" element={<LockIn />}></Route>
             <Route path="/ignitecs" element={<Ignite />}></Route>
             <Route path="/up" element={<Graphics />}></Route>
-            <Route path="/asl" element={<Graphics />}></Route>
+            <Route path="/asl" element={<ASL />}></Route>
           </Routes>
           <BottomNavBar></BottomNavBar>
         </div>
