@@ -1,15 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Portfolio from "../Portfolio/Portfolio";
+
+const interpolateColor = (t: number, startColor: string, endColor: string): string => {
+  const parseColor = (color: string) => {
+    const matches = color.match(/#([0-9a-fA-F]{6})/);
+    if (!matches) throw new Error("Invalid color format");
+    const [, hex] = matches;
+    return {
+      r: parseInt(hex.slice(0, 2), 16),
+      g: parseInt(hex.slice(2, 4), 16),
+      b: parseInt(hex.slice(4, 6), 16),
+    };
+  };
+
+  const start = parseColor(startColor);
+  const end = parseColor(endColor);
+
+  const interpolate = (startValue: number, endValue: number) =>
+    startValue + t * (endValue - startValue);
+
+  const r = Math.round(interpolate(start.r, end.r));
+  const g = Math.round(interpolate(start.g, end.g));
+  const b = Math.round(interpolate(start.b, end.b));
+
+  return `rgb(${r}, ${g}, ${b})`;
+};
 
 export default function Home() {
   const imagePath1 = "/static/images/square.png";
   const imagePath2 = "/static/images/face-reveal-mbta.png";
   let currentImagePath = imagePath1;
 
+  const [backgroundColor, setBackgroundColor] = useState("#e5f4f9");
+  
   useEffect(() => {
     window.scrollTo(0, 0);
+    const startColor = "#bca7d7;";
+    const endColor = "#b09dc9";
+    const duration = 10000; // how long a cycle is
+
+    let animationFrame: number;
+
+    const animateBackground = (startTime: number) => {
+      const now = performance.now();
+      const elapsed = now - startTime;
+
+      // normalize time to [0, 1] using a sine wave for smoother transition/oscillation
+      const t = (Math.sin((elapsed / duration) * Math.PI * 2 - Math.PI / 2) + 1) / 2;
+
+      const newColor = interpolateColor(t, startColor, endColor);
+      setBackgroundColor(newColor);
+
+      animationFrame = requestAnimationFrame(() => animateBackground(startTime));
+    };
+
+    const startTime = performance.now();
+    animateBackground(startTime);
+
+    return () => cancelAnimationFrame(animationFrame);
   }, []);
 
   function changeImage() {
@@ -59,6 +109,7 @@ export default function Home() {
           aria-label="Introduction Text"
           className="hello-text"
           id="hello-text"
+          style={{backgroundColor}}
         >
           Hi! I’m <span className="bold-sans">Jinho</span>! I’m an aspiring
           full-stack developer at Brown University. <br></br>I'm interested in
