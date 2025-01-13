@@ -39,7 +39,7 @@ export default function Home() {
     window.scrollTo(0, 0);
     const startColor = "#bca7d7;";
     const endColor = "#b09dc9";
-    const duration = 10000; // how long a cycle is
+    const duration = 4000; // how long a cycle is
 
     let animationFrame: number;
 
@@ -109,9 +109,10 @@ export default function Home() {
           aria-label="Introduction Text"
           className="hello-text"
           id="hello-text"
-          style={{backgroundColor}}
+
         >
-          Hi! I’m <span className="bold-sans">Jinho</span>! I’m an aspiring
+          <span style={{backgroundColor}}>Hi! I’m <span className="bold-sans">Jinho</span>! </span>
+           I’m an aspiring
           full-stack developer at Brown University. <br></br>I'm interested in
           the intersections of CS and language, as well as creating accessible
           computer science education.
