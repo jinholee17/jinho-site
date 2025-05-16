@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Portfolio from "../Portfolio/Portfolio";
+import EmojiButton from "./EmojiProps";
 
 const interpolateColor = (t: number, startColor: string, endColor: string): string => {
   const parseColor = (color: string) => {
@@ -136,29 +137,7 @@ export default function Home() {
               </div>
             </div>
           </button>
-          <Link to="/about">
-            <button
-              className="diamond-button"
-              aria-label="diamond button"
-              onClick={() => {
-                scrollToTop();
-              }}
-            >
-              <div className="image-container">
-                <img
-                  className="diamond-image"
-                  src="/static/images/diamond.png"
-                  id="diamond-image"
-                />
-                <div className="text-overlay">
-                  <p className="diamond-text" id="diamond-text">
-                    about me
-                  </p>
-                </div>
-              </div>
-            </button>
-          </Link>
-
+          <EmojiButton/>
           <button
             className="square-portfolio-button"
             aria-label="square button"
