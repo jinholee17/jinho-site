@@ -15,6 +15,27 @@ interface pageProps {
 }
 
 export default function NavBar() {
+  function scrollToPortfolio() {
+    const timeout = 5000;
+    const intervalTime = 100;
+    let elapsed = 0;
+  
+    const interval = setInterval(() => {
+      const targetDiv = document.getElementById("lighter-purple-bg");
+  
+      if (targetDiv) {
+        targetDiv.scrollIntoView({ behavior: "smooth" });
+        clearInterval(interval);
+      } else {
+        elapsed += intervalTime;
+        if (elapsed >= timeout) {
+          clearInterval(interval);
+          console.error("Timed out waiting for #lighter-purple-bg to appear");
+        }
+      }
+    }, intervalTime);
+  }
+  
   return (
     <React.Fragment>
       <header className="website-top-header">
@@ -28,8 +49,8 @@ export default function NavBar() {
           </button>
         </Link>
         <div className="top-nav-right">
-          <Link to="/about" className="aboutme-link">
-            <button className="aboutme-button" aria-label="aboutme button">
+          <Link to="/" className="aboutme-link">
+            <button className="aboutme-button" aria-label="aboutme button" onClick={() => scrollToPortfolio()}>
               projects
             </button>
           </Link>
