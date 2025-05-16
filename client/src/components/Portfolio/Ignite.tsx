@@ -77,6 +77,45 @@ export default function Ignite() {
           <p className="ignite-team-text">My team at Sophia Academy!</p>
         </div>
       </div>
+      <div >
+      <div className="project-text-box">
+        <h1 className="cosmic-title">Brown Student Radio</h1>
+        <p className="cosmic-text">
+          Another site I helped develop for Full Stack At Brown was the new Brown Student Radio site.
+        </p>
+        <p className="cosmic-text">
+          This was their old site, which was a little outdated and needed some revamping.
+        </p>
+        <img className="cosmic-image3" src="/static/images/bsr1.png" />
+        <p className="cosmic-text">
+          And this was the site we created! The designers did a great job at working with our client
+          picking a style that was clean, cool, and professional. I worked on the frontend for this site,
+          integrating the Muses Radio Player API so that users can listen to the live BSR radio feed from
+          the website.
+        </p>
+        <img className="cosmic-image3" src="/static/images/bsr2.png" />
+      </div>
+      <div className="ignite-bottom">
+      <button
+          className="ignite-square-button"
+          aria-label="square button"
+          onClick={() => window.open("https://https://brownstudentradio.vercel.app/", "_blank")}
+        >
+          <div className="image-container">
+            <img
+              className="square-image"
+              src="/static/images/square.png"
+              id="square-image"
+            />
+            <div className="text-overlay">
+              <p className="lockin-square-text" id="square-text">
+                Check out the website here!
+              </p>
+            </div>
+          </div>
+        </button>
+      </div>
+      </div>
     </div>
   );
 }

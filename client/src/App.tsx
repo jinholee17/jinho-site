@@ -35,7 +35,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <div className="App-header">
           <NavBar></NavBar>
           <Routes>
-            <Route path="/" element={<Website />}></Route>
+            <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/cosmic" element={<Cosmic />}></Route>
             <Route path="/lockin" element={<LockIn />}></Route>
