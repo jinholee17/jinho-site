@@ -190,9 +190,7 @@ export default function Home() {
                   id="rectangle-image"
                 />
                 <div className="text-overlay">
-                  <p className="square-text" id="square-text">
-                    github
-                  </p>
+                  <img className="email-image" src="/static/images/resume.png" />
                 </div>
               </div>
             </button>
@@ -213,9 +211,7 @@ export default function Home() {
                   id="rectangle-image"
                 />
                 <div className="text-overlay">
-                  <p className="square-text" id="square-text">
-                    linkedin
-                  </p>
+                  <img className="linkedin-image" src="/static/images/linkedin.png" />
                 </div>
               </div>
             </button>
@@ -233,9 +229,7 @@ export default function Home() {
                   id="rectangle-image"
                 />
                 <div className="text-overlay">
-                  <p className="square-text" id="square-text">
-                    email
-                  </p>
+                  <img className="email-image" src="/static/images/email.png" />
                 </div>
               </div>
             </button>

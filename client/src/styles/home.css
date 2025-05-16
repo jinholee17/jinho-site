@@ -19,31 +19,11 @@
   font-size: 30px;
   font-weight: 50;
   max-width: 1000px;
-  padding: 50px;
-  margin: auto;
-  margin-top: 30px;
-
-  /* padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 40px;
-  padding-bottom: 50px; */
-
-  /* overflow: hidden;
-  border-right: 0.15em solid #000000;
-  animation: typing 3s steps(55, end), blink-caret 1s step-end infinite; */
+  padding: 100px;
 }
-
-/* .home-text {
-  font-family: "Open Sans";
-  font-size: 30px;
-  font-weight: 50;
-  padding-left: 80px;
-  padding-right: 80px;
-} */
 
 .home-page {
   position: block;
-  /* overflow-x: hidden; */
   margin-top: 100px;
 }
 
@@ -77,7 +57,7 @@
 .rectangle-stack {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align the buttons */
+  align-items: center;
   gap: 0px;
 }
 
@@ -87,11 +67,11 @@
 
 .text-overlay {
   position: absolute;
-  top: 50%; /* Adjust as needed */
-  left: 50%; /* Adjust as needed */
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: black; /* Text color */
+  color: black;
 }
 
 .square-text,

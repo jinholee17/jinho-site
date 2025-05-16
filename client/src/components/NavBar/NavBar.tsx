@@ -27,38 +27,18 @@ export default function NavBar() {
             Jinho Lee
           </button>
         </Link>
-        <Link to="/about" className="aboutme-link">
-          <button className="aboutme-button" aria-label="aboutme button">
-            about me
-          </button>
-        </Link>
-
-        <button
-          className="email-button"
-          aria-label="email button"
-          onClick={() => window.open("mailto:jinho_lee@brown.edu", "_blank")}
-        >
-          <img className="email-image" src="/static/images/email.png" />
-        </button>
-        <button
-          className="linkedin-button"
-          aria-label="linkedin button"
-          onClick={() =>
-            window.open(
-              "https://www.linkedin.com/in/jinho-lee-23a30b217/",
-              "_blank"
-            )
-          }
-        >
-          <img className="linkedin-image" src="/static/images/linkedin.png" />
-        </button>
-        <button
-          className="resume-button"
-          aria-label="github button"
-          onClick={() => window.open("https://github.com/jinholee17/")}
-        >
-          <img className="resume-image" src="/static/images/resume.png" />
-        </button>
+        <div className="top-nav-right">
+          <Link to="/about" className="aboutme-link">
+            <button className="aboutme-button" aria-label="aboutme button">
+              projects
+            </button>
+          </Link>
+          <Link to="/about" className="aboutme-link">
+            <button className="aboutme-button" aria-label="aboutme button">
+              about me
+            </button>
+          </Link>
+        </div>
       </header>
     </React.Fragment>
   );

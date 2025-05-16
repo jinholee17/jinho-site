@@ -18,16 +18,14 @@
 
 .website-top-header {
   position: fixed;
-  padding-top: 10px;
-  margin-top: 0px;
   top: 0px;
-  background-color: transparent;
   width: 100%;
-  /* max-width: 100%; */
-  padding-bottom: 20px;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1000;
 }
 
 .website-bottom-header {
@@ -39,36 +37,60 @@
   justify-content: space-between;
 }
 
-.home-button,
-.aboutme-button,
-.email-button,
-.linkedin-button,
-.resume-button {
-  display: flex;
+.home-button
+{
   align-items: center;
-}
-
-.home-button {
+  background-color: white;
+  padding:7px;
+  border-radius: 10px;
   font-family: "Digital Numbers";
   margin-top: 15px;
   margin-right: 10px;
+  margin-left:25px;
   max-width: 100%;
   font-size: 18px;
   display: block;
   border: none;
   cursor: pointer;
-  background-color: transparent;
   font-weight: bold;
   justify-self: center;
   color: black;
-}
-.aboutme-link {
-  margin-right: 10px;
-  margin-left: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .aboutme-button {
   font-family: "Digital Numbers";
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  color: black;
+  cursor: pointer;
+}
+.email-button,
+.linkedin-button,
+.resume-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.top-nav-right{
+  display: flex;
+  background-color: white;
   margin-top: 15px;
+  border-radius: 10px;
+  padding: 7px 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  gap: 10px;
+  margin-right: 25px;
+}
+
+.aboutme-link {
+  margin-right: 10px;
+  margin-left: auto;
+  text-decoration: none;
+}
+.aboutme-button {
+  font-family: "Digital Numbers";
   margin-left: auto;
   margin-right: 10px;
   max-width: 100%;
@@ -76,7 +98,6 @@
   font-size: 17px;
   border: none;
   cursor: pointer;
-  background-color: transparent;
   font-weight: bold;
   color: black;
 }
@@ -90,7 +111,6 @@
   font-size: 24px;
   border: none;
   cursor: pointer;
-  background-color: transparent;
   font-weight: bold;
 }
 
@@ -126,6 +146,11 @@
 .email-image {
   height: 75%;
   width: 75%;
+}
+
+.github-image{
+  height: 50%;
+  width: 50%;
 }
 
 .thanks-text {
