@@ -149,6 +149,12 @@ export default function Portfolio() {
           </div>
         </div> */}
       </div>
+      <div className="gradient-box-2" id="gradient-box-2"></div>
+      <div className="gray-bg">
+        <h1 aria-label="Portfolio Header" className="portfolio-text">
+          Extras!
+        </h1>
+      </div>
     </React.Fragment>
   );
 }
