@@ -16,10 +16,13 @@ export default function EmojiButton() {
   const handleMouseDown = (e, index) => {
     const emoji = emojiRefs.current[index];
     const rect = emoji.getBoundingClientRect();
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+
     dragging.current = {
       index,
-      startX: e.clientX,
-      startY: e.clientY,
+      startX: e.clientX + scrollX,
+      startY: e.clientY + scrollY,
       offsetX: e.clientX - rect.left,
       offsetY: e.clientY - rect.top,
       hasMoved: false,
@@ -43,11 +46,14 @@ export default function EmojiButton() {
 
     drag.hasMoved = true;
 
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+
     setPositions((prev) => ({
       ...prev,
       [drag.index]: {
-        x: e.clientX - drag.offsetX,
-        y: e.clientY - drag.offsetY,
+        x: e.clientX + scrollX - drag.offsetX,
+        y: e.clientY + scrollY - drag.offsetY,
       },
     }));
   };
