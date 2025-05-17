@@ -24,53 +24,24 @@ export default function Portfolio() {
           My featured works!
         </h1>
         <div className="project">
-          <Link className="portfolio-link" to="/asl">
-            <button className="square-button" aria-label="square button">
-              <div className="image-container">
-                <img
-                  className="square-image"
-                  src="/static/images/gray-square.png"
-                  id="square-image"
-                />
-                <div className="text-overlay">
-                  <p className="square-text2" id="square-text">
-                    asl interpreter
-                  </p>
-                </div>
-              </div>
-            </button>
-          </Link>
           <Link to="/asl">
             <button
               className="project-button"
               aria-label="lock in at brown button"
             >
               <div className="image-container">
-                <img
-                  className="project-image"
-                  src="/static/images/asl_logo.png"
-                />
-                <div className="hide-text" id='overlay'>An American Sign Language translator using computer vision algorithms</div>
-              </div>
-            </button>
-          </Link>
-        </div>
-        <div className="project">
-          <Link className="portfolio-link" to="/up">
-            <button className="square-button" aria-label="square button">
-              <div className="image-container">
-                <img
-                  className="square-image"
-                  src="/static/images/gray-square.png"
-                  id="square-image"
-                />
-                <div className="text-overlay">
-                  <p className="square-text2" id="square-text">
-                    up simulation
-                  </p>
+                <div className="image-crop-box">
+                  <img
+                    className="project-image"
+                    src="/static/images/asl_logo.png"
+                  />
+                  <div className="hide-text" id='overlay'>An American Sign Language translator using computer vision algorithms</div>
                 </div>
               </div>
             </button>
+            <h1 className="project-title-text">
+              ASL Interpreter
+            </h1>
           </Link>
           <Link to="/up">
             <button
@@ -78,31 +49,60 @@ export default function Portfolio() {
               aria-label="lock in at brown button"
             >
               <div className="image-container">
-                <video className="projects-video" autoPlay loop muted preload="auto">
-                  <source src="/static/videos/graphics-video.mp4" type="video/mp4" />
-                </video>
-                <div className="hide-text" id='overlay'>A realtime graphics simulation of Pixar's Up</div>
-              </div>
-            </button>
-          </Link>
-        </div>
-        <div className="project">
-          <Link className="portfolio-link" to="/lockin">
-            <button className="square-button" aria-label="square button">
-              <div className="image-container">
-                <img
-                  className="square-image"
-                  src="/static/images/gray-square.png"
-                  id="square-image"
-                />
-                <div className="text-overlay">
-                  <p className="square-text" id="square-text">
-                    lock in at brown
-                  </p>
+                <div className="image-crop-box">
+                  <video className="projects-video" autoPlay loop muted preload="auto">
+                    <source src="/static/videos/graphics-crop.mp4" type="video/mp4" />
+                  </video>
+                  <div className="hide-text" id='overlay'>A realtime graphics simulation of Pixar's Up</div>
                 </div>
               </div>
             </button>
+            <h1 className="project-title-text">
+              Pixar's Up Simulation
+            </h1>
           </Link>
+        </div>
+        <div className="project">
+          <Link to="/bdh">
+            <button
+              className="project-button"
+              aria-label="brown daily herald button"
+            >
+              <div className="image-container">
+                <div className="image-crop-box">
+                  <img
+                    className="project-image"
+                    src="/static/images/bdh.png"
+                  />
+                  <div className="hide-text" id='overlay'>The mobile app for the Brown Daily Herald, Brown's oldest student newspaper</div>
+                </div>
+              </div>
+            </button>
+            <h1 className="project-title-text">
+              Brown Daily Herald App
+            </h1>
+          </Link>
+          <Link to="/bdh">
+            <button
+              className="project-button"
+              aria-label="sea ice melting predictor button"
+            >
+              <div className="image-container">
+                <div className="image-crop-box">
+                  <img
+                    className="project-image"
+                    src="/static/images/sea-ice.png"
+                  />
+                  <div className="hide-text" id='overlay'>A deep learning research investigation for predicting sea ice melting</div>
+                </div>
+              </div>
+            </button>
+            <h1 className="project-title-text">
+              Sea Ice Melting CNN
+            </h1>
+          </Link>
+        </div>
+        {/* <div className="project">
           <Link to="/lockin">
             <button
               className="project-button"
@@ -114,24 +114,6 @@ export default function Portfolio() {
                   src="/static/images/lockedin.png"
                 />
                 <div className="hide-text" id='overlay'>A study-spot recommender</div>
-              </div>
-            </button>
-          </Link>
-        </div>
-        <div className="project">
-          <Link className="portfolio-link" to="/ignitecs">
-            <button className="square-button" aria-label="square button">
-              <div className="image-container">
-                <img
-                  className="square-image"
-                  src="/static/images/gray-square.png"
-                  id="square-image"
-                />
-                <div className="text-overlay">
-                  <p className="square-text" id="square-text">
-                    IgniteCS
-                  </p>
-                </div>
               </div>
             </button>
           </Link>
@@ -148,22 +130,6 @@ export default function Portfolio() {
           </Link>
         </div>
         <div className="project">
-          <Link className="portfolio-link" to="/cosmic">
-            <button className="square-button" aria-label="square button">
-              <div className="image-container">
-                <img
-                  className="square-image"
-                  src="/static/images/gray-square.png"
-                  id="square-image"
-                />
-                <div className="text-overlay">
-                  <p className="square-text2" id="square-text">
-                    Cosmic Connection
-                  </p>
-                </div>
-              </div>
-            </button>
-          </Link>
           <div>
             <Link to="/cosmic">
               <button
@@ -181,7 +147,7 @@ export default function Portfolio() {
               </button>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </React.Fragment>
   );
