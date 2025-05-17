@@ -16,22 +16,10 @@ interface pageProps {
 }
 
 export default function Portfolio() {
-  async function scrollToTop(sect: Section) {
-    const targetDiv = document.getElementById("back-home-button");
-
-    if (targetDiv != null) {
-      const targetOffset = targetDiv.offsetTop - 50;
-      window.scrollTo({
-        top: targetOffset,
-        behavior: "instant",
-      });
-    } else {
-      console.error("Could not find target div");
-    }
-  }
   return (
     <React.Fragment>
-      <div className="lighter-purple-bg" id="lighter-purple-bg">
+      <div className="gradient-box-1" id="gradient-box-1"></div>
+      <div className="white-bg" id="white-bg">
         <h1 aria-label="Portfolio Header" className="portfolio-text">
           My featured works!
         </h1>

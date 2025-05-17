@@ -21,7 +21,7 @@ export default function NavBar() {
     let elapsed = 0;
   
     const interval = setInterval(() => {
-      const targetDiv = document.getElementById("lighter-purple-bg");
+      const targetDiv = document.getElementById("gradient-box-1");
   
       if (targetDiv) {
         targetDiv.scrollIntoView({ behavior: "smooth" });

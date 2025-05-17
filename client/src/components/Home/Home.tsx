@@ -80,7 +80,7 @@ export default function Home() {
   }
 
   function scrollToPortfolio() {
-    const targetDiv = document.getElementById("lighter-purple-bg");
+    const targetDiv = document.getElementById("gradient-box-1");
 
     if (targetDiv != null) {
       targetDiv.scrollIntoView({ behavior: "smooth" });
