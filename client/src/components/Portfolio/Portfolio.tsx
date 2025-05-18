@@ -102,12 +102,44 @@ export default function Portfolio() {
           </Link>
         </div>
       </div>
-      <div className="gradient-box-2" id="gradient-box-2"></div>
+      <div className="gradient-box-2" id="gradient-box-2"/>
       <h1 aria-label="Portfolio Header" className="portfolio-text-2">
           Extras!
       </h1>
       <div className="gray-bg">
         <Slideshow></Slideshow>
+      </div>
+      <div className="gradient-box-3" />
+      <div className="white-bg-2">
+        <h1 aria-label="Portfolio Header" className="portfolio-text">
+          Current Favs!
+        </h1>
+        <div className="project">
+          <div className="favs-image">
+            <img
+              className="favs-image"
+              src="/static/images/java.png"
+            />
+          </div>
+          <div className="favs-image">
+            <img
+              className="favs-image"
+              src="/static/images/python.png"
+            />
+          </div>
+          <div className="favs-image">
+            <img
+              className="favs-image"
+              src="/static/images/typescript.png"
+            />
+          </div>
+          <div className="favs-image">
+            <img
+              className="favs-image"
+              src="/static/images/react.png"
+            />
+          </div>
+        </div>
       </div>
     </React.Fragment>
   );
