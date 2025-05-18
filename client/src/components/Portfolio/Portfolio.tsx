@@ -62,7 +62,7 @@ export default function Portfolio() {
           </Link>
         </div>
         <div className="project">
-          <Link to="/bdh">
+          <a href="https://apps.apple.com/us/app/the-brown-daily-herald/id6642661925" target="_blank" rel="noreferrer">
             <button
               className="project-button"
               aria-label="brown daily herald button"
@@ -73,14 +73,14 @@ export default function Portfolio() {
                     className="project-image"
                     src="/static/images/bdh.png"
                   />
-                  <div className="hide-text" id='overlay'>The mobile app for the Brown Daily Herald, Brown's oldest student newspaper</div>
+                  <div className="hide-text" id='overlay'>The mobile app for the Brown Daily Herald, Brown's oldest student newspaper. Click to download in the App Store!</div>
                 </div>
               </div>
             </button>
             <h1 className="project-title-text">
               Brown Daily Herald App
             </h1>
-          </Link>
+          </a>
           <Link to="/bdh">
             <button
               className="project-button"

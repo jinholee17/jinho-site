@@ -26,15 +26,6 @@ export default function Graphics() {
 
   return (
     <div className="up-page">
-      <Link to="/" className="back-home-link">
-        <button
-          className="back-home-button"
-          id="back-home-button"
-          aria-label="Home Button"
-        >
-          -Back to home
-        </button>
-      </Link>
       <div className="project-text-box">
         <h1 className="cosmic-title">Up Simulation</h1>
         <p className="bold-cosmic">Graphics Course Term Project (Fall 2024):</p>

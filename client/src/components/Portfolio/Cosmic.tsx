@@ -19,15 +19,6 @@ export default function Cosmic() {
 
   return (
     <div className="cosmic-page">
-      <Link to="/" className="back-home-link">
-        <button
-          className="back-home-button"
-          id="back-home-button"
-          aria-label="Home Button"
-        >
-          -Back to home
-        </button>
-      </Link>
       <div className="project-text-box">
         <h1 className="cosmic-title">Cosmic Connections</h1>
         <p className="bold-cosmic">Hack @ Brown 2024 Hackathon Entry: </p>

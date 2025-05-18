@@ -43,6 +43,8 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <Route path="/ignitecs" element={<Ignite />}></Route>
             <Route path="/up" element={<Graphics />}></Route>
             <Route path="/asl" element={<ASL />}></Route>
+            <Route path="/ice" element={<ASL />}></Route>
+            <Route path="/houses" element={<ASL />}></Route>
           </Routes>
           <BottomNavBar></BottomNavBar>
         </div>

@@ -20,15 +20,6 @@ export default function Ignite() {
 
   return (
     <div className="ignite-page">
-      <Link to="/" className="back-home-link">
-        <button
-          className="back-home-button"
-          id="back-home-button"
-          aria-label="Home Button"
-        >
-          -Back to home
-        </button>
-      </Link>
       <div className="project-text-box">
         <h1 className="cosmic-title">IgniteCS</h1>
         <p className="cosmic-text">

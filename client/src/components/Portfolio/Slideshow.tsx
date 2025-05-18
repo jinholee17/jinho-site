@@ -44,7 +44,7 @@ export default function Slideshow() {
             </button>
 
             <div className="image-crop-box">
-                <a href={slides[currentIndex].link} target="_blank" rel="noreferrer">
+                <a href={slides[currentIndex].link}>
                     <img
                         src={slides[currentIndex].image}
                         alt={`Slide ${currentIndex + 1}`}
