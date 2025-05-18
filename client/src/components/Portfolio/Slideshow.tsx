@@ -37,7 +37,7 @@ export default function Slideshow() {
   };
 
   return (
-    <div className="slideshow-container">
+    <div>
         <div className="slideshow-container">
             <button className="nav-button" onClick={goToPrevious}>
                 ←
@@ -59,6 +59,9 @@ export default function Slideshow() {
             <button className="nav-button" onClick={goToNext}>
                 →
             </button>
+        </div>
+        <div className="project-title-text">
+          {slides[currentIndex].title}
         </div>
     </div>
   );

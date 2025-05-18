@@ -101,52 +101,6 @@ export default function Portfolio() {
             </h1>
           </Link>
         </div>
-        {/* <div className="project">
-          <Link to="/lockin">
-            <button
-              className="project-button"
-              aria-label="lock in at brown button"
-            >
-              <div className="image-container">
-                <img
-                  className="project-image"
-                  src="/static/images/lockedin.png"
-                />
-                <div className="hide-text" id='overlay'>A study-spot recommender</div>
-              </div>
-            </button>
-          </Link>
-          <Link to="/ignitecs">
-            <button className="project-button" aria-label="ignitecs button">
-              <div className="image-container">
-                <img
-                  className="project-image"
-                  src="/static/images/ignitecs.png"
-                />
-                <div className="hide-text" id='overlay'>Program Bringing CS education to Providence Schools</div>
-              </div>
-            </button>
-          </Link>
-        </div>
-        <div className="project">
-          <div>
-            <Link to="/cosmic">
-              <button
-                className="project-button"
-                aria-label="cosmic connections button"
-                id="cosmic-connections"
-              >
-                <div className="image-container">
-                  <img
-                    className="project-image"
-                    src="/static/images/cosmic.png"
-                  />
-                  <div className="hide-text" id='overlay'>An astrological compatibility calculator</div>
-                </div>
-              </button>
-            </Link>
-          </div>
-        </div> */}
       </div>
       <div className="gradient-box-2" id="gradient-box-2"></div>
       <h1 aria-label="Portfolio Header" className="portfolio-text-2">
