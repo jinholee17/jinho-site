@@ -13,6 +13,7 @@ import "./styles/home.css";
 import "./styles/aboutme.css";
 import "./styles/portfolio.css";
 import "./styles/projects.css";
+import "./styles/slideshow.css";
 import { useState } from "react";
 import BottomNavBar from "./components/NavBar/BottomNavBar";
 import NavBar from "./components/NavBar/NavBar";

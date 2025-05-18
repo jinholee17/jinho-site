@@ -1,7 +1,6 @@
 import React from "react";
-import { useState } from "react";
-import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
+import Slideshow from "./Slideshow";
 
 enum Section {
   HOME = "HOME",
@@ -150,10 +149,11 @@ export default function Portfolio() {
         </div> */}
       </div>
       <div className="gradient-box-2" id="gradient-box-2"></div>
-      <div className="gray-bg">
-        <h1 aria-label="Portfolio Header" className="portfolio-text">
+      <h1 aria-label="Portfolio Header" className="portfolio-text-2">
           Extras!
-        </h1>
+      </h1>
+      <div className="gray-bg">
+        <Slideshow></Slideshow>
       </div>
     </React.Fragment>
   );
