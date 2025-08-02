@@ -81,7 +81,7 @@ export default function Portfolio() {
               Brown Daily Herald App
             </h1>
           </a>
-          <Link to="/bdh">
+          <Link to="/sea-ice">
             <button
               className="project-button"
               aria-label="sea ice melting predictor button"

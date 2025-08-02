@@ -1,5 +1,4 @@
 import "../src/styles/App.css";
-import Website from "./pages/website";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
@@ -19,6 +18,7 @@ import BottomNavBar from "./components/NavBar/BottomNavBar";
 import NavBar from "./components/NavBar/NavBar";
 import Graphics from "./components/Portfolio/Graphics";
 import ASL from "./components/Portfolio/ASL";
+import SeaIce from "./components/Portfolio/seaice";
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
@@ -43,7 +43,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <Route path="/ignitecs" element={<Ignite />}></Route>
             <Route path="/up" element={<Graphics />}></Route>
             <Route path="/asl" element={<ASL />}></Route>
-            <Route path="/ice" element={<ASL />}></Route>
+            <Route path="/sea-ice" element={<SeaIce />}></Route>
             <Route path="/houses" element={<ASL />}></Route>
           </Routes>
           <BottomNavBar></BottomNavBar>
