@@ -18,7 +18,7 @@ import BottomNavBar from "./components/NavBar/BottomNavBar";
 import NavBar from "./components/NavBar/NavBar";
 import Graphics from "./components/Portfolio/Graphics";
 import ASL from "./components/Portfolio/ASL";
-import SeaIce from "./components/Portfolio/seaice";
+import SeaIce from "./components/Portfolio/SeaIce";
 enum Section {
   HOME = "HOME",
   ABOUTME = "ABOUTME",
