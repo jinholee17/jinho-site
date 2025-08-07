@@ -202,8 +202,8 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <Portfolio />
       </div>
+      <Portfolio />
     </React.Fragment>
   );
 }
