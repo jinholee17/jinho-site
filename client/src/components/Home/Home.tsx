@@ -99,8 +99,12 @@ export default function Home() {
 
         >
           <span style={{backgroundColor}}><span className="bold-sans">Jinho Lee</span> </span>
-          is a software developer interested in creating 
-          human-centered software that looks good and does good.<br></br> Previously SWE intern @ MathWorks. 
+          is a software developer interested in unifying data and storytelling to create human-centered software.
+          <h1
+          aria-label="Introduction Text"
+          className="prev-text"
+            >Previously SWE intern @ MathWorks. 
+          </h1> 
         </h1>
         <div className="buttons">
           <button

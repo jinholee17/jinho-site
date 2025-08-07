@@ -29,7 +29,7 @@ export default function AboutMe() {
               Cambridge, and currently reside in Providence.
             </p>
             <p className="aboutme-paragraph">
-              I’m a junior at Brown University where I am immersed in computer
+              I’m a senior at Brown University where I am immersed in computer
               science, literary arts, theatre, and community organizing.
             </p>
             <p className="aboutme-paragraph">
