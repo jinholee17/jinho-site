@@ -39,7 +39,7 @@ export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
     const startColor = "#bca7d7;";
-    const endColor = "#b09dc9";
+    const endColor = "#aa98c2ff";
     const duration = 4000; // how long a cycle is
 
     let animationFrame: number;
@@ -98,8 +98,8 @@ export default function Home() {
           id="hello-text"
 
         >
-          <span style={{backgroundColor}}><span className="bold-sans">Jinho Lee</span> </span>
-          is a software developer interested in unifying data and storytelling to create human-centered software.
+          <span style={{backgroundColor}}><span className="bold-sans">Jinho Lee</span></span>
+           {' '}is a software developer interested in unifying data and storytelling to create human-centered software.
           <h1
           aria-label="Introduction Text"
           className="prev-text"
